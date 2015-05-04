@@ -1,0 +1,17 @@
+Ext.onReady(function() {
+    var DEVICE_OVERVIEW_ID = 'deviceoverviewpanel_summary';
+    Ext.ComponentMgr.onAvailable(DEVICE_OVERVIEW_ID, function(){
+        var overview = Ext.getCmp(DEVICE_OVERVIEW_ID);
+        overview.removeField('memory');
+        overview.removeField('locking');
+ 
+        overview.addField({
+        name: 'arista_switch_memory',
+        fieldLabel: _t('Total Memory')});
+
+        overview.addField({
+            name: 'arista_switch_serial',
+ fieldLabel: _t('Serial Number')
+        });
+    });
+});
