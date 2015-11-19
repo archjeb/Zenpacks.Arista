@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configure
     xmlns="http://namespaces.zope.org/zope"
-    xmlns:zcml="http://namespaces.zope.org/zcml">
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    >
 
-    <adapter
-        provides=".interfaces.IAristaDeviceInfo"
-        for=".AristaDevice.AristaDevice"
-        factory=".info.AristaDeviceInfo"
+    <!-- ZenETL Custom Reportables -->
+
+    <include file="reportable.zcml"
+        xmlns:zcml="http://namespaces.zope.org/zcml"
+        zcml:condition="installed ZenPacks.zenoss.ZenETL"
         />
-    <adapter
-        provides=".interfaces.IAristaTemperatureInfo"
-        for=".AristaTemperature.AristaTemperature"
-        factory=".info.AristaTemperatureInfo"
+
+    <!-- Browser -->
+    <browser:resourceDirectory
+        name="arista"
+        directory="resources"
         />
-    <adapter
-        provides=".interfaces.IAristaCPUInfo"
-        for=".AristaCPU.AristaCPU"
-        factory=".info.AristaCPUInfo"
+
+    <browser:viewlet
+        name="js-arista"
+        paths="/++resource++arista/js/arista.js"
+        weight="10"
+        manager="Products.ZenUI3.browser.interfaces.IJavaScriptSrcManager"
+        class="Products.ZenUI3.browser.javascript.JavaScriptSrcBundleViewlet"
+        permission="zope2.Public"
         />
-    <adapter
-        provides=".interfaces.IAristaMemoryInfo"
-        for=".AristaMemory.AristaMemory"
-        factory=".info.AristaMemoryInfo"
-        />
-    <include package=".browser"/>
- 
 </configure>

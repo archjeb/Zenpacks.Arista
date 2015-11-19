@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<folder exportedWithPermissions="false">
+  <parent>/public</parent>
+  <name>Arista_ZenPack</name>
+  <label>Arista_ZenPack</label>
+  <resource>Arista_Domain</resource>
+</folder>
