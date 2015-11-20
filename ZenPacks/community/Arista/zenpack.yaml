@@ -126,28 +126,24 @@ device_classes:
             datapoints:
               sysDescr:
                 description: Basic template that only collects system description
-                aliases: {sysDescr: null}
             oid: 1.3.6.1.2.1.1.1.0
           sysLocation:
             type: SNMP
             datapoints:
               sysLocation:
                 description: Basic template that only collects sysLocation.
-                aliases: {sysLocation: null}
             oid: 1.3.6.1.2.1.1.6.0
           sysName:
             type: SNMP
             datapoints:
               sysName:
                 description: Basic template that only collects snmp SysName.
-                aliases: {sysName: null}
             oid: 1.3.6.1.2.1.1.5.0
           sysUpTime:
             type: SNMP
             datapoints:
               sysUpTime:
                 description: Basic template that only collects sysUpTime.
-                aliases: {sysUpTime: null}
             oid: 1.3.6.1.2.1.1.3.0
         graphs:
           snmpInBadCommunityNames:

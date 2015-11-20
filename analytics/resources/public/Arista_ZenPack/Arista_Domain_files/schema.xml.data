@@ -56,46 +56,6 @@
             <item resourceId="JoinTree_1.hourly_snmpoutpkts.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_snmpoutpkts_fct_avg" label="snmpoutpkts / hourly / Average"/>
             <item resourceId="JoinTree_1.hourly_snmpoutpkts.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_snmpoutpkts_fct_max" label="snmpoutpkts / hourly / Highest"/>
             <item resourceId="JoinTree_1.hourly_snmpoutpkts.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_snmpoutpkts_fct_min" label="snmpoutpkts / hourly / Lowest"/>
-            <item resourceId="JoinTree_1.daily_sysdescr.fct_ts" dimensionOrMeasure="Dimension" id="daily_sysdescr_fct_ts" label="sysdescr / daily / TS"/>
-            <item resourceId="JoinTree_1.daily_sysdescr.fct_ts_gmt" dimensionOrMeasure="Dimension" id="daily_sysdescr_fct_ts_gmt" label="sysdescr / daily / TS GMT"/>
-            <item resourceId="JoinTree_1.daily_sysdescr.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_sysdescr_fct_avg" label="sysdescr / daily / Average"/>
-            <item resourceId="JoinTree_1.daily_sysdescr.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_sysdescr_fct_max" label="sysdescr / daily / Highest"/>
-            <item resourceId="JoinTree_1.daily_sysdescr.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_sysdescr_fct_min" label="sysdescr / daily / Lowest"/>
-            <item resourceId="JoinTree_1.hourly_sysdescr.fct_ts" dimensionOrMeasure="Dimension" id="hourly_sysdescr_fct_ts" label="sysdescr / hourly / TS"/>
-            <item resourceId="JoinTree_1.hourly_sysdescr.fct_ts_gmt" dimensionOrMeasure="Dimension" id="hourly_sysdescr_fct_ts_gmt" label="sysdescr / hourly / TS GMT"/>
-            <item resourceId="JoinTree_1.hourly_sysdescr.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_sysdescr_fct_avg" label="sysdescr / hourly / Average"/>
-            <item resourceId="JoinTree_1.hourly_sysdescr.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_sysdescr_fct_max" label="sysdescr / hourly / Highest"/>
-            <item resourceId="JoinTree_1.hourly_sysdescr.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_sysdescr_fct_min" label="sysdescr / hourly / Lowest"/>
-            <item resourceId="JoinTree_1.daily_syslocation.fct_ts" dimensionOrMeasure="Dimension" id="daily_syslocation_fct_ts" label="syslocation / daily / TS"/>
-            <item resourceId="JoinTree_1.daily_syslocation.fct_ts_gmt" dimensionOrMeasure="Dimension" id="daily_syslocation_fct_ts_gmt" label="syslocation / daily / TS GMT"/>
-            <item resourceId="JoinTree_1.daily_syslocation.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_syslocation_fct_avg" label="syslocation / daily / Average"/>
-            <item resourceId="JoinTree_1.daily_syslocation.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_syslocation_fct_max" label="syslocation / daily / Highest"/>
-            <item resourceId="JoinTree_1.daily_syslocation.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_syslocation_fct_min" label="syslocation / daily / Lowest"/>
-            <item resourceId="JoinTree_1.hourly_syslocation.fct_ts" dimensionOrMeasure="Dimension" id="hourly_syslocation_fct_ts" label="syslocation / hourly / TS"/>
-            <item resourceId="JoinTree_1.hourly_syslocation.fct_ts_gmt" dimensionOrMeasure="Dimension" id="hourly_syslocation_fct_ts_gmt" label="syslocation / hourly / TS GMT"/>
-            <item resourceId="JoinTree_1.hourly_syslocation.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_syslocation_fct_avg" label="syslocation / hourly / Average"/>
-            <item resourceId="JoinTree_1.hourly_syslocation.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_syslocation_fct_max" label="syslocation / hourly / Highest"/>
-            <item resourceId="JoinTree_1.hourly_syslocation.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_syslocation_fct_min" label="syslocation / hourly / Lowest"/>
-            <item resourceId="JoinTree_1.daily_sysname.fct_ts" dimensionOrMeasure="Dimension" id="daily_sysname_fct_ts" label="sysname / daily / TS"/>
-            <item resourceId="JoinTree_1.daily_sysname.fct_ts_gmt" dimensionOrMeasure="Dimension" id="daily_sysname_fct_ts_gmt" label="sysname / daily / TS GMT"/>
-            <item resourceId="JoinTree_1.daily_sysname.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_sysname_fct_avg" label="sysname / daily / Average"/>
-            <item resourceId="JoinTree_1.daily_sysname.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_sysname_fct_max" label="sysname / daily / Highest"/>
-            <item resourceId="JoinTree_1.daily_sysname.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_sysname_fct_min" label="sysname / daily / Lowest"/>
-            <item resourceId="JoinTree_1.hourly_sysname.fct_ts" dimensionOrMeasure="Dimension" id="hourly_sysname_fct_ts" label="sysname / hourly / TS"/>
-            <item resourceId="JoinTree_1.hourly_sysname.fct_ts_gmt" dimensionOrMeasure="Dimension" id="hourly_sysname_fct_ts_gmt" label="sysname / hourly / TS GMT"/>
-            <item resourceId="JoinTree_1.hourly_sysname.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_sysname_fct_avg" label="sysname / hourly / Average"/>
-            <item resourceId="JoinTree_1.hourly_sysname.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_sysname_fct_max" label="sysname / hourly / Highest"/>
-            <item resourceId="JoinTree_1.hourly_sysname.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_sysname_fct_min" label="sysname / hourly / Lowest"/>
-            <item resourceId="JoinTree_1.daily_sysuptime.fct_ts" dimensionOrMeasure="Dimension" id="daily_sysuptime_fct_ts" label="sysuptime / daily / TS"/>
-            <item resourceId="JoinTree_1.daily_sysuptime.fct_ts_gmt" dimensionOrMeasure="Dimension" id="daily_sysuptime_fct_ts_gmt" label="sysuptime / daily / TS GMT"/>
-            <item resourceId="JoinTree_1.daily_sysuptime.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_sysuptime_fct_avg" label="sysuptime / daily / Average"/>
-            <item resourceId="JoinTree_1.daily_sysuptime.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_sysuptime_fct_max" label="sysuptime / daily / Highest"/>
-            <item resourceId="JoinTree_1.daily_sysuptime.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_sysuptime_fct_min" label="sysuptime / daily / Lowest"/>
-            <item resourceId="JoinTree_1.hourly_sysuptime.fct_ts" dimensionOrMeasure="Dimension" id="hourly_sysuptime_fct_ts" label="sysuptime / hourly / TS"/>
-            <item resourceId="JoinTree_1.hourly_sysuptime.fct_ts_gmt" dimensionOrMeasure="Dimension" id="hourly_sysuptime_fct_ts_gmt" label="sysuptime / hourly / TS GMT"/>
-            <item resourceId="JoinTree_1.hourly_sysuptime.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_sysuptime_fct_avg" label="sysuptime / hourly / Average"/>
-            <item resourceId="JoinTree_1.hourly_sysuptime.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_sysuptime_fct_max" label="sysuptime / hourly / Highest"/>
-            <item resourceId="JoinTree_1.hourly_sysuptime.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_sysuptime_fct_min" label="sysuptime / hourly / Lowest"/>
           </items>
         </itemGroup>
       </itemGroups>
@@ -362,102 +322,6 @@
       </fieldList>
     </jdbcTable>
     <jdbcTable tableName="hourly_snmpoutpkts" datasourceId="zenoss_reporting" id="hourly_snmpoutpkts">
-      <fieldList>
-        <field type="java.lang.Integer" id="device_key"/>
-        <field type="java.lang.Integer" id="component_key"/>
-        <field type="java.util.Date" id="date_key"/>
-        <field type="java.sql.Timestamp" id="fct_ts"/>
-        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
-        <field type="java.lang.Double" id="fct_avg"/>
-        <field type="java.lang.Double" id="fct_max"/>
-        <field type="java.lang.Double" id="fct_min"/>
-      </fieldList>
-    </jdbcTable>
-    <jdbcTable tableName="daily_sysdescr" datasourceId="zenoss_reporting" id="daily_sysdescr">
-      <fieldList>
-        <field type="java.lang.Integer" id="device_key"/>
-        <field type="java.lang.Integer" id="component_key"/>
-        <field type="java.util.Date" id="date_key"/>
-        <field type="java.sql.Timestamp" id="fct_ts"/>
-        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
-        <field type="java.lang.Double" id="fct_avg"/>
-        <field type="java.lang.Double" id="fct_max"/>
-        <field type="java.lang.Double" id="fct_min"/>
-      </fieldList>
-    </jdbcTable>
-    <jdbcTable tableName="hourly_sysdescr" datasourceId="zenoss_reporting" id="hourly_sysdescr">
-      <fieldList>
-        <field type="java.lang.Integer" id="device_key"/>
-        <field type="java.lang.Integer" id="component_key"/>
-        <field type="java.util.Date" id="date_key"/>
-        <field type="java.sql.Timestamp" id="fct_ts"/>
-        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
-        <field type="java.lang.Double" id="fct_avg"/>
-        <field type="java.lang.Double" id="fct_max"/>
-        <field type="java.lang.Double" id="fct_min"/>
-      </fieldList>
-    </jdbcTable>
-    <jdbcTable tableName="daily_syslocation" datasourceId="zenoss_reporting" id="daily_syslocation">
-      <fieldList>
-        <field type="java.lang.Integer" id="device_key"/>
-        <field type="java.lang.Integer" id="component_key"/>
-        <field type="java.util.Date" id="date_key"/>
-        <field type="java.sql.Timestamp" id="fct_ts"/>
-        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
-        <field type="java.lang.Double" id="fct_avg"/>
-        <field type="java.lang.Double" id="fct_max"/>
-        <field type="java.lang.Double" id="fct_min"/>
-      </fieldList>
-    </jdbcTable>
-    <jdbcTable tableName="hourly_syslocation" datasourceId="zenoss_reporting" id="hourly_syslocation">
-      <fieldList>
-        <field type="java.lang.Integer" id="device_key"/>
-        <field type="java.lang.Integer" id="component_key"/>
-        <field type="java.util.Date" id="date_key"/>
-        <field type="java.sql.Timestamp" id="fct_ts"/>
-        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
-        <field type="java.lang.Double" id="fct_avg"/>
-        <field type="java.lang.Double" id="fct_max"/>
-        <field type="java.lang.Double" id="fct_min"/>
-      </fieldList>
-    </jdbcTable>
-    <jdbcTable tableName="daily_sysname" datasourceId="zenoss_reporting" id="daily_sysname">
-      <fieldList>
-        <field type="java.lang.Integer" id="device_key"/>
-        <field type="java.lang.Integer" id="component_key"/>
-        <field type="java.util.Date" id="date_key"/>
-        <field type="java.sql.Timestamp" id="fct_ts"/>
-        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
-        <field type="java.lang.Double" id="fct_avg"/>
-        <field type="java.lang.Double" id="fct_max"/>
-        <field type="java.lang.Double" id="fct_min"/>
-      </fieldList>
-    </jdbcTable>
-    <jdbcTable tableName="hourly_sysname" datasourceId="zenoss_reporting" id="hourly_sysname">
-      <fieldList>
-        <field type="java.lang.Integer" id="device_key"/>
-        <field type="java.lang.Integer" id="component_key"/>
-        <field type="java.util.Date" id="date_key"/>
-        <field type="java.sql.Timestamp" id="fct_ts"/>
-        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
-        <field type="java.lang.Double" id="fct_avg"/>
-        <field type="java.lang.Double" id="fct_max"/>
-        <field type="java.lang.Double" id="fct_min"/>
-      </fieldList>
-    </jdbcTable>
-    <jdbcTable tableName="daily_sysuptime" datasourceId="zenoss_reporting" id="daily_sysuptime">
-      <fieldList>
-        <field type="java.lang.Integer" id="device_key"/>
-        <field type="java.lang.Integer" id="component_key"/>
-        <field type="java.util.Date" id="date_key"/>
-        <field type="java.sql.Timestamp" id="fct_ts"/>
-        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
-        <field type="java.lang.Double" id="fct_avg"/>
-        <field type="java.lang.Double" id="fct_max"/>
-        <field type="java.lang.Double" id="fct_min"/>
-      </fieldList>
-    </jdbcTable>
-    <jdbcTable tableName="hourly_sysuptime" datasourceId="zenoss_reporting" id="hourly_sysuptime">
       <fieldList>
         <field type="java.lang.Integer" id="device_key"/>
         <field type="java.lang.Integer" id="component_key"/>
@@ -754,70 +618,6 @@
         <field type="java.lang.Double" id="hourly_snmpoutpkts.fct_avg"/>
         <field type="java.lang.Double" id="hourly_snmpoutpkts.fct_max"/>
         <field type="java.lang.Double" id="hourly_snmpoutpkts.fct_min"/>
-        <field type="java.lang.Integer" id="daily_sysdescr.device_key"/>
-        <field type="java.lang.Integer" id="daily_sysdescr.component_key"/>
-        <field type="java.util.Date" id="daily_sysdescr.date_key"/>
-        <field type="java.sql.Timestamp" id="daily_sysdescr.fct_ts"/>
-        <field type="java.sql.Timestamp" id="daily_sysdescr.fct_ts_gmt"/>
-        <field type="java.lang.Double" id="daily_sysdescr.fct_avg"/>
-        <field type="java.lang.Double" id="daily_sysdescr.fct_max"/>
-        <field type="java.lang.Double" id="daily_sysdescr.fct_min"/>
-        <field type="java.lang.Integer" id="hourly_sysdescr.device_key"/>
-        <field type="java.lang.Integer" id="hourly_sysdescr.component_key"/>
-        <field type="java.util.Date" id="hourly_sysdescr.date_key"/>
-        <field type="java.sql.Timestamp" id="hourly_sysdescr.fct_ts"/>
-        <field type="java.sql.Timestamp" id="hourly_sysdescr.fct_ts_gmt"/>
-        <field type="java.lang.Double" id="hourly_sysdescr.fct_avg"/>
-        <field type="java.lang.Double" id="hourly_sysdescr.fct_max"/>
-        <field type="java.lang.Double" id="hourly_sysdescr.fct_min"/>
-        <field type="java.lang.Integer" id="daily_syslocation.device_key"/>
-        <field type="java.lang.Integer" id="daily_syslocation.component_key"/>
-        <field type="java.util.Date" id="daily_syslocation.date_key"/>
-        <field type="java.sql.Timestamp" id="daily_syslocation.fct_ts"/>
-        <field type="java.sql.Timestamp" id="daily_syslocation.fct_ts_gmt"/>
-        <field type="java.lang.Double" id="daily_syslocation.fct_avg"/>
-        <field type="java.lang.Double" id="daily_syslocation.fct_max"/>
-        <field type="java.lang.Double" id="daily_syslocation.fct_min"/>
-        <field type="java.lang.Integer" id="hourly_syslocation.device_key"/>
-        <field type="java.lang.Integer" id="hourly_syslocation.component_key"/>
-        <field type="java.util.Date" id="hourly_syslocation.date_key"/>
-        <field type="java.sql.Timestamp" id="hourly_syslocation.fct_ts"/>
-        <field type="java.sql.Timestamp" id="hourly_syslocation.fct_ts_gmt"/>
-        <field type="java.lang.Double" id="hourly_syslocation.fct_avg"/>
-        <field type="java.lang.Double" id="hourly_syslocation.fct_max"/>
-        <field type="java.lang.Double" id="hourly_syslocation.fct_min"/>
-        <field type="java.lang.Integer" id="daily_sysname.device_key"/>
-        <field type="java.lang.Integer" id="daily_sysname.component_key"/>
-        <field type="java.util.Date" id="daily_sysname.date_key"/>
-        <field type="java.sql.Timestamp" id="daily_sysname.fct_ts"/>
-        <field type="java.sql.Timestamp" id="daily_sysname.fct_ts_gmt"/>
-        <field type="java.lang.Double" id="daily_sysname.fct_avg"/>
-        <field type="java.lang.Double" id="daily_sysname.fct_max"/>
-        <field type="java.lang.Double" id="daily_sysname.fct_min"/>
-        <field type="java.lang.Integer" id="hourly_sysname.device_key"/>
-        <field type="java.lang.Integer" id="hourly_sysname.component_key"/>
-        <field type="java.util.Date" id="hourly_sysname.date_key"/>
-        <field type="java.sql.Timestamp" id="hourly_sysname.fct_ts"/>
-        <field type="java.sql.Timestamp" id="hourly_sysname.fct_ts_gmt"/>
-        <field type="java.lang.Double" id="hourly_sysname.fct_avg"/>
-        <field type="java.lang.Double" id="hourly_sysname.fct_max"/>
-        <field type="java.lang.Double" id="hourly_sysname.fct_min"/>
-        <field type="java.lang.Integer" id="daily_sysuptime.device_key"/>
-        <field type="java.lang.Integer" id="daily_sysuptime.component_key"/>
-        <field type="java.util.Date" id="daily_sysuptime.date_key"/>
-        <field type="java.sql.Timestamp" id="daily_sysuptime.fct_ts"/>
-        <field type="java.sql.Timestamp" id="daily_sysuptime.fct_ts_gmt"/>
-        <field type="java.lang.Double" id="daily_sysuptime.fct_avg"/>
-        <field type="java.lang.Double" id="daily_sysuptime.fct_max"/>
-        <field type="java.lang.Double" id="daily_sysuptime.fct_min"/>
-        <field type="java.lang.Integer" id="hourly_sysuptime.device_key"/>
-        <field type="java.lang.Integer" id="hourly_sysuptime.component_key"/>
-        <field type="java.util.Date" id="hourly_sysuptime.date_key"/>
-        <field type="java.sql.Timestamp" id="hourly_sysuptime.fct_ts"/>
-        <field type="java.sql.Timestamp" id="hourly_sysuptime.fct_ts_gmt"/>
-        <field type="java.lang.Double" id="hourly_sysuptime.fct_avg"/>
-        <field type="java.lang.Double" id="hourly_sysuptime.fct_max"/>
-        <field type="java.lang.Double" id="hourly_sysuptime.fct_min"/>
         <field type="java.lang.Integer" id="dim_arista_cpu.arista_cpu_key"/>
         <field type="java.sql.Timestamp" id="dim_arista_cpu.arista_cpu_deleted_at"/>
         <field type="arista_cpu_deleted" id="dim_arista_cpu.arista_cpu_deleted" dataSetExpression="if(dim_arista_cpu.arista_cpu_deleted_at,null,0,1)"/>
@@ -966,30 +766,6 @@
           <joinString>left outer join hourly_snmpoutpkts hourly_snmpoutpkts on (dim_device.device_key == hourly_snmpoutpkts.device_key)</joinString>
         </joinedDataSetRef>
         <joinedDataSetRef>
-          <joinString>left outer join daily_sysdescr daily_sysdescr on (dim_device.device_key == daily_sysdescr.device_key)</joinString>
-        </joinedDataSetRef>
-        <joinedDataSetRef>
-          <joinString>left outer join hourly_sysdescr hourly_sysdescr on (dim_device.device_key == hourly_sysdescr.device_key)</joinString>
-        </joinedDataSetRef>
-        <joinedDataSetRef>
-          <joinString>left outer join daily_syslocation daily_syslocation on (dim_device.device_key == daily_syslocation.device_key)</joinString>
-        </joinedDataSetRef>
-        <joinedDataSetRef>
-          <joinString>left outer join hourly_syslocation hourly_syslocation on (dim_device.device_key == hourly_syslocation.device_key)</joinString>
-        </joinedDataSetRef>
-        <joinedDataSetRef>
-          <joinString>left outer join daily_sysname daily_sysname on (dim_device.device_key == daily_sysname.device_key)</joinString>
-        </joinedDataSetRef>
-        <joinedDataSetRef>
-          <joinString>left outer join hourly_sysname hourly_sysname on (dim_device.device_key == hourly_sysname.device_key)</joinString>
-        </joinedDataSetRef>
-        <joinedDataSetRef>
-          <joinString>left outer join daily_sysuptime daily_sysuptime on (dim_device.device_key == daily_sysuptime.device_key)</joinString>
-        </joinedDataSetRef>
-        <joinedDataSetRef>
-          <joinString>left outer join hourly_sysuptime hourly_sysuptime on (dim_device.device_key == hourly_sysuptime.device_key)</joinString>
-        </joinedDataSetRef>
-        <joinedDataSetRef>
           <joinString>left outer join dim_arista_cpu dim_arista_cpu on (dim_arista_cpu.arista_device_key == dim_device.device_key)</joinString>
         </joinedDataSetRef>
         <joinedDataSetRef>
@@ -1029,7 +805,7 @@
           <joinString>left outer join hourly_entphysensorvalue hourly_entphysensorvalue on (dim_arista_temperature.arista_temperature_key == hourly_entphysensorvalue.component_key)</joinString>
         </joinedDataSetRef>
         <joinedDataSetRef>
-          <joinString>left outer join dim_date dim_date on (daily_snmpinbadversions.date_key == dim_date.date_key and daily_snmpinpkts.date_key == dim_date.date_key and daily_entphysensorvalue.date_key == dim_date.date_key and hourly_sysname.date_key == dim_date.date_key and daily_hrprocessorload.date_key == dim_date.date_key and hourly_snmpoutpkts.date_key == dim_date.date_key and daily_snmpoutpkts.date_key == dim_date.date_key and hourly_entphysensorvalue.date_key == dim_date.date_key and hourly_hrstorageallocationunits.date_key == dim_date.date_key and daily_sysuptime.date_key == dim_date.date_key and daily_hrstoragesize.date_key == dim_date.date_key and hourly_hrstorageused.date_key == dim_date.date_key and hourly_sysdescr.date_key == dim_date.date_key and daily_snmpintotalreqvars.date_key == dim_date.date_key and hourly_snmpintotalreqvars.date_key == dim_date.date_key and daily_snmpinbadcommunitynames.date_key == dim_date.date_key and daily_sysdescr.date_key == dim_date.date_key and hourly_snmpinbadcommunitynames.date_key == dim_date.date_key and hourly_snmpinbadversions.date_key == dim_date.date_key and hourly_sysuptime.date_key == dim_date.date_key and hourly_syslocation.date_key == dim_date.date_key and daily_syslocation.date_key == dim_date.date_key and daily_hrstorageused.date_key == dim_date.date_key and hourly_hrstoragesize.date_key == dim_date.date_key and hourly_hrprocessorload.date_key == dim_date.date_key and hourly_snmpinpkts.date_key == dim_date.date_key and daily_sysname.date_key == dim_date.date_key and daily_hrstorageallocationunits.date_key == dim_date.date_key)</joinString>
+          <joinString>left outer join dim_date dim_date on (hourly_snmpintotalreqvars.date_key == dim_date.date_key and daily_snmpinbadcommunitynames.date_key == dim_date.date_key and daily_snmpinpkts.date_key == dim_date.date_key and hourly_entphysensorvalue.date_key == dim_date.date_key and daily_hrstoragesize.date_key == dim_date.date_key and hourly_snmpinbadcommunitynames.date_key == dim_date.date_key and hourly_hrstorageused.date_key == dim_date.date_key and daily_entphysensorvalue.date_key == dim_date.date_key and hourly_snmpinbadversions.date_key == dim_date.date_key and daily_snmpoutpkts.date_key == dim_date.date_key and hourly_snmpoutpkts.date_key == dim_date.date_key and daily_hrstorageused.date_key == dim_date.date_key and daily_snmpinbadversions.date_key == dim_date.date_key and daily_snmpintotalreqvars.date_key == dim_date.date_key and daily_hrprocessorload.date_key == dim_date.date_key and hourly_snmpinpkts.date_key == dim_date.date_key and hourly_hrstorageallocationunits.date_key == dim_date.date_key and daily_hrstorageallocationunits.date_key == dim_date.date_key and hourly_hrstoragesize.date_key == dim_date.date_key and hourly_hrprocessorload.date_key == dim_date.date_key)</joinString>
         </joinedDataSetRef>
       </joinedDataSetList>
     </jdbcTable>
