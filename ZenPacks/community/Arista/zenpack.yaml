@@ -16,7 +16,7 @@ device_classes:
             datapoints:
               hrProcessorLoad:
                 description: Load on each proc and core
-                aliases: {hrProcessorLoad: null}
+                aliases: {hrProcessorLoad__pct: null}
             oid: .1.3.6.1.2.1.25.3.3.1.2
         graphs:
           Utilization:
@@ -36,20 +36,20 @@ device_classes:
             type: SNMP
             datapoints:
               hrStorageAllocationUnits:
-                aliases: {hrStorageAllocationUnits: null}
+                aliases: {hrStorageAllocationUnits__bytes: null}
             oid: .1.3.6.1.2.1.25.2.3.1.4
           hrStorageSize:
             type: SNMP
             datapoints:
               hrStorageSize:
-                aliases: {hrStorageSize: null}
+                aliases: {hrStorageSize__bytes: null}
             oid: .1.3.6.1.2.1.25.2.3.1.5
           hrStorageUsed:
             type: SNMP
             datapoints:
               hrStorageUsed:
                 description: Storage Used
-                aliases: {hrStorageUsed: null}
+                aliases: {hrStorageUsed__bytes: null}
             oid: .1.3.6.1.2.1.25.2.3.1.6
         graphs:
           Storage Used:
@@ -71,7 +71,7 @@ device_classes:
             datapoints:
               entPhySensorValue:
                 description: Temperature Sensor Value
-                aliases: {entPhySensorValue: null}
+                aliases: {entPhySensorValue__degrees: null}
             oid: .1.3.6.1.2.1.99.1.1.1.4
         graphs:
           Temperature:
@@ -91,35 +91,35 @@ device_classes:
             datapoints:
               snmpInBadCommunityNames:
                 description: Basic template that only collects snmp InBadCommunityNames.
-                aliases: {snmpInBadCommunityNames: null}
+                aliases: {snmpInBadCommunityNames__count: null}
             oid: 1.3.6.1.2.1.11.4.0
           snmpInBadVersions:
             type: SNMP
             datapoints:
               snmpInBadVersions:
                 description: Basic template that only collects snmpInBadVersions.
-                aliases: {snmpInBadVersions: null}
+                aliases: {snmpInBadVersions__count: null}
             oid: 1.3.6.1.2.1.11.3.0
           snmpInPkts:
             type: SNMP
             datapoints:
               snmpInPkts:
                 description: Basic template that only collects snmpInPkts
-                aliases: {snmpInPkts: null}
+                aliases: {snmpInPkts__count: null}
             oid: 1.3.6.1.2.1.11.1.0
           snmpInTotalReqVars:
             type: SNMP
             datapoints:
               snmpInTotalReqVars:
                 description: Basic template that only collects snmpInTotalReqVars.
-                aliases: {snmpInTotalReqVars: null}
+                aliases: {snmpInTotalReqVars__count: null}
             oid: 1.3.6.1.2.1.11.13.0
           snmpOutPkts:
             type: SNMP
             datapoints:
               snmpOutPkts:
                 description: Basic template that only collects snmpOutPkts.
-                aliases: {snmpOutPkts: null}
+                aliases: {snmpOutPkts__count: null}
             oid: 1.3.6.1.2.1.11.2.0
           sysDescr:
             type: SNMP

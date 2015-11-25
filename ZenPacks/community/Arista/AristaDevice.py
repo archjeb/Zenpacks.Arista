@@ -13,7 +13,10 @@ from Products.ZenRelations.RelSchema import *
 
 
 class AristaDevice(schema.AristaDevice):
-    """Custom model code for AristaDevice class."""
+    """
+    Custom model code for AristaDevice class.  We need old relations
+    to update existing instances such as object path
+    """
 
     class_dynamicview_group = 'Devices'
     impacted_by = ['aristaCPUs', 'aristaMemorys', 'aristaTemperatures']
