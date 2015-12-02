@@ -49,7 +49,7 @@ log = logging.getLogger('zen.Arista')
 
 
 class AristaTemperature(SnmpPlugin):
-    relname = 'aristaTemperatures'
+    relname = 'temperature_sensors'
     modname = 'ZenPacks.community.Arista.AristaTemperature'
     snmpGetTableMaps = (
         GetTableMap('entPhysicalTable',

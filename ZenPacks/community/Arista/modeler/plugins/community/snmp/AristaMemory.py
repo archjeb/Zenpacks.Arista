@@ -52,7 +52,7 @@ STORAGETYPES = {
 
 
 class AristaMemory(SnmpPlugin):
-    relname = 'aristaMemorys'
+    relname = 'memory_subsystems'
     modname = 'ZenPacks.community.Arista.AristaMemory'
     snmpGetTableMaps = (
         GetTableMap('hrStorageEntry',

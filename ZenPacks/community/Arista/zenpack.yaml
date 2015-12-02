@@ -173,7 +173,9 @@ classes:
     base: [zenpacklib.Device]
     meta_type: AristaDevice
     label: Device
-    impacted_by: [aristaCPUs, aristaMemorys, aristaTemperatures]
+    dynamicview_views: [service_view]
+    dynamicview_relations:
+      impacted_by: [cpu_systems, memory_subsystems, temperature_sensors]
     properties:
       arista_switch_serial:
         label: Arista Switch Serial
@@ -188,15 +190,21 @@ classes:
   AristaCPU:
     meta_type: AristaCPU
     label: Arista CPU
-    impacts: [aristaDevice]
+    dynamicview_views: [service_view]
+    dynamicview_relations:
+      impacts: [cpu_device]
   AristaTemperature:
     meta_type: AristaTemperature
     label: Arista Temperature
-    impacts: [aristaDevice]
+    dynamicview_views: [service_view]
+    dynamicview_relations:
+      impacts: [sensor_device]
   AristaMemory:
     meta_type: AristaMemory
     label: Arista Memory
-    impacts: [aristaDevice]
+    dynamicview_views: [service_view]
+    dynamicview_relations:
+      impacts: [memory_device]
     properties:
       arista_storage_type:
         label: Arista Storage Type
@@ -208,6 +216,6 @@ classes:
         label: Arista Storage Size
         content_width: 150
 class_relationships:
-  - AristaDevice 1:MC AristaCPU
-  - AristaDevice 1:MC AristaTemperature
-  - AristaDevice 1:MC AristaMemory
+  - AristaDevice(cpu_systems) 1:MC AristaCPU(cpu_device)
+  - AristaDevice(temperature_sensors) 1:MC AristaTemperature(sensor_device)
+  - AristaDevice(memory_subsystems) 1:MC AristaMemory(memory_device)

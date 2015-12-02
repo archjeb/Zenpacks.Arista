@@ -344,7 +344,6 @@
         <field type="java.lang.Boolean" id="monitor"/>
         <field type="java.lang.String" id="productionState"/>
         <field type="java.lang.String" id="preMWProductionState"/>
-        <field type="java.lang.Integer" id="arista_device_key"/>
         <field type="java.lang.Integer" id="cpu_device_key"/>
       </fieldList>
     </jdbcTable>
@@ -386,7 +385,6 @@
         <field type="java.lang.String" id="arista_storage_type"/>
         <field type="java.lang.String" id="arista_storage_alloc_units"/>
         <field type="java.lang.String" id="arista_storage_size"/>
-        <field type="java.lang.Integer" id="arista_device_key"/>
         <field type="java.lang.Integer" id="memory_device_key"/>
       </fieldList>
     </jdbcTable>
@@ -473,7 +471,6 @@
         <field type="java.lang.Boolean" id="monitor"/>
         <field type="java.lang.String" id="productionState"/>
         <field type="java.lang.String" id="preMWProductionState"/>
-        <field type="java.lang.Integer" id="arista_device_key"/>
         <field type="java.lang.Integer" id="sensor_device_key"/>
       </fieldList>
     </jdbcTable>
@@ -630,7 +627,6 @@
         <field type="java.lang.Boolean" id="dim_arista_cpu.monitor"/>
         <field type="java.lang.String" id="dim_arista_cpu.productionState"/>
         <field type="java.lang.String" id="dim_arista_cpu.preMWProductionState"/>
-        <field type="java.lang.Integer" id="dim_arista_cpu.arista_device_key"/>
         <field type="java.lang.Integer" id="dim_arista_cpu.cpu_device_key"/>
         <field type="java.lang.Integer" id="daily_hrprocessorload__pct.device_key"/>
         <field type="java.lang.Integer" id="daily_hrprocessorload__pct.component_key"/>
@@ -660,7 +656,6 @@
         <field type="java.lang.String" id="dim_arista_memory.arista_storage_type"/>
         <field type="java.lang.String" id="dim_arista_memory.arista_storage_alloc_units"/>
         <field type="java.lang.String" id="dim_arista_memory.arista_storage_size"/>
-        <field type="java.lang.Integer" id="dim_arista_memory.arista_device_key"/>
         <field type="java.lang.Integer" id="dim_arista_memory.memory_device_key"/>
         <field type="java.lang.Integer" id="daily_hrstorageallocationunits__bytes.device_key"/>
         <field type="java.lang.Integer" id="daily_hrstorageallocationunits__bytes.component_key"/>
@@ -719,7 +714,6 @@
         <field type="java.lang.Boolean" id="dim_arista_temperature.monitor"/>
         <field type="java.lang.String" id="dim_arista_temperature.productionState"/>
         <field type="java.lang.String" id="dim_arista_temperature.preMWProductionState"/>
-        <field type="java.lang.Integer" id="dim_arista_temperature.arista_device_key"/>
         <field type="java.lang.Integer" id="dim_arista_temperature.sensor_device_key"/>
         <field type="java.lang.Integer" id="daily_entphysensorvalue__degrees.device_key"/>
         <field type="java.lang.Integer" id="daily_entphysensorvalue__degrees.component_key"/>
@@ -772,7 +766,7 @@
           <joinString>left outer join hourly_snmpoutpkts__count hourly_snmpoutpkts__count on (dim_device.device_key == hourly_snmpoutpkts__count.device_key)</joinString>
         </joinedDataSetRef>
         <joinedDataSetRef>
-          <joinString>left outer join dim_arista_cpu dim_arista_cpu on (dim_arista_cpu.arista_device_key == dim_device.device_key)</joinString>
+          <joinString>left outer join dim_arista_cpu dim_arista_cpu on (dim_arista_cpu.cpu_device_key == dim_device.device_key)</joinString>
         </joinedDataSetRef>
         <joinedDataSetRef>
           <joinString>left outer join daily_hrprocessorload__pct daily_hrprocessorload__pct on (dim_arista_cpu.arista_cpu_key == daily_hrprocessorload__pct.component_key)</joinString>
@@ -781,7 +775,7 @@
           <joinString>left outer join hourly_hrprocessorload__pct hourly_hrprocessorload__pct on (dim_arista_cpu.arista_cpu_key == hourly_hrprocessorload__pct.component_key)</joinString>
         </joinedDataSetRef>
         <joinedDataSetRef>
-          <joinString>left outer join dim_arista_memory dim_arista_memory on (dim_arista_memory.arista_device_key == dim_device.device_key)</joinString>
+          <joinString>left outer join dim_arista_memory dim_arista_memory on (dim_arista_memory.memory_device_key == dim_device.device_key)</joinString>
         </joinedDataSetRef>
         <joinedDataSetRef>
           <joinString>left outer join daily_hrstorageallocationunits__bytes daily_hrstorageallocationunits__bytes on (dim_arista_memory.arista_memory_key == daily_hrstorageallocationunits__bytes.component_key)</joinString>
@@ -802,7 +796,7 @@
           <joinString>left outer join hourly_hrstorageused__bytes hourly_hrstorageused__bytes on (dim_arista_memory.arista_memory_key == hourly_hrstorageused__bytes.component_key)</joinString>
         </joinedDataSetRef>
         <joinedDataSetRef>
-          <joinString>left outer join dim_arista_temperature dim_arista_temperature on (dim_arista_temperature.arista_device_key == dim_device.device_key)</joinString>
+          <joinString>left outer join dim_arista_temperature dim_arista_temperature on (dim_arista_temperature.sensor_device_key == dim_device.device_key)</joinString>
         </joinedDataSetRef>
         <joinedDataSetRef>
           <joinString>left outer join daily_entphysensorvalue__degrees daily_entphysensorvalue__degrees on (dim_arista_temperature.arista_temperature_key == daily_entphysensorvalue__degrees.component_key)</joinString>

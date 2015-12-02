@@ -46,7 +46,7 @@ log = logging.getLogger('zen.Arista')
 
 
 class AristaCPU(SnmpPlugin):
-    relname = 'aristaCPUs'
+    relname = 'cpu_systems'
     modname = 'ZenPacks.community.Arista.AristaCPU'
     snmpGetTableMaps = (
         GetTableMap('hrDeviceEntry',
