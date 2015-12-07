@@ -38,15 +38,14 @@
 # Modeler for switch Temperature Sensors
 
 
-
+import re
 import logging
 log = logging.getLogger('zen.Arista')
 
 from Products.DataCollector.plugins.CollectorPlugin \
-    import SnmpPlugin, GetMap, GetTableMap
+    import SnmpPlugin, GetTableMap
 
-from Products.DataCollector.plugins.DataMaps import MultiArgs, ObjectMap
-
+log = logging.getLogger('zen.Arista')
 
 
 class AristaTemperature(SnmpPlugin):
@@ -57,31 +56,26 @@ class AristaTemperature(SnmpPlugin):
                     '.1.3.6.1.2.1.47.1.1.1.1',
                     {
                         '.2': 'entPhysicalDescr',
-                    }
-        ),
-    )    
+                    }),
+    )
 
     def process(self, device, results, log):
-        import re
-        temp_sensors = results[1].get('entPhysicalTable',{})
+
+        log.info('Modeler {} processing data for device {}'.format(
+                 self.name(), device.id))
+        temperature_sensors = results[1].get('entPhysicalTable', {})
         rm = self.relMap()
-        for snmpindex, row in temp_sensors.items():
-            name = row.get('entPhysicalDescr')
-            if not name:
-                log.warn('ignore sensor with no name')
+        for index, value in temperature_sensors.items():
+            name = value.get('entPhysicalDescr')
+            if name is None:
+                log.warn('Skip temperature sensor without name')
                 continue
-            # We want to only include the sensors that have 'temp sensor' in description
             if not re.findall("temp sensor.*", name):
                 continue
- 
-            #Need to add another check for name to include 'temp'
-            om = self.objectMap()
-            #Sanitize name
-            om.id = self.prepId(name) 
-            om.title = name
-            om.snmpindex = snmpindex.strip('.')
-            rm.append(om)
 
-        log.info('Modeler %s processing data for device %s',self.name(), device.id)
-        
+            om = self.objectMap()
+            om.id = self.prepId(name)
+            om.title = name
+            om.snmpindex = index.strip('.')
+            rm.append(om)
         return rm

@@ -37,32 +37,13 @@
 #
 #   AristaCPU Class
 
-
-from Products.ZenModel.DeviceComponent import DeviceComponent
-from Products.ZenModel.ManagedEntity import ManagedEntity
-from Products.ZenModel.ZenossSecurity import ZEN_CHANGE_DEVICE
-from Products.ZenRelations.RelSchema import ToManyCont, ToOne
+from . import schema
 
 
-class AristaCPU(DeviceComponent, ManagedEntity):
-    #Class name must match filename
-    meta_type = portal_type = 'AristaCPU'
-    
-    _relations = ManagedEntity._relations + (
-        ('cpu_device', ToOne(ToManyCont,'ZenPacks.community.Arista.AristaDevice','cpu_systems',)),
-        )
+class AristaCPU(schema.AristaCPU):
+    """
+    Custom model code for AristaCPU class.  We need this to
+    install new Zenoss version on top of community one
+    """
 
-    factory_type_information = ({
-        'actions': ({
-            'id': 'perfConf',
-            'name': 'Template',
-            'action': 'objTemplates',
-            'permissions': (ZEN_CHANGE_DEVICE,),
-            },),
-        },)
-
-    def device(self):
-        return self.cpu_device()
-
-    def getRRDTemplateName(self):
-        return 'AristaCPU'
+    class_dynamicview_group = 'Arista CPUs'

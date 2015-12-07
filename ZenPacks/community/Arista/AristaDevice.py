@@ -37,29 +37,13 @@
 #
 #Device Class Definition and device attributes for Arista Products
 
-from Products.ZenModel.Device import Device
-from Products.ZenRelations.RelSchema import ToManyCont, ToOne
-from Products.ZenModel.DeviceComponent import DeviceComponent
-from Products.ZenModel.ManagedEntity import ManagedEntity
-from Products.ZenModel.ZenossSecurity import ZEN_CHANGE_DEVICE
- 
-class AristaDevice(Device):
-    arista_switch_serial = None
-    arista_switch_memory = None
-    arista_switch_version = None
-    arista_switch_mac = None
-    arista_switch_model = None
- 
-    _properties = Device._properties + (
-        {'id': 'arista_switch_serial', 'type': 'string'},
-        {'id': 'arista_switch_memory', 'type': 'string'},
-        {'id': 'arista_switch_version', 'type': 'string'},
-        {'id': 'arista_switch_mac', 'type': 'string'},
-        {'id': 'arista_switch_model', 'type': 'string'},
-        )
-    _relations = Device._relations + (
-    ('temperature_sensors', ToManyCont(ToOne, 'ZenPacks.community.Arista.AristaTemperature', 'sensor_device', )),
-    ('cpu_systems', ToManyCont(ToOne, 'ZenPacks.community.Arista.AristaCPU', 'cpu_device', )),
-    ('memory_subsystems', ToManyCont(ToOne, 'ZenPacks.community.Arista.AristaMemory', 'memory_device', )),
-    )
- 
+from . import schema
+
+
+class AristaDevice(schema.AristaDevice):
+    """
+    Custom model code for AristaDevice class.   We need this to
+    install new Zenoss version on top of community one
+    """
+
+    class_dynamicview_group = 'Devices'

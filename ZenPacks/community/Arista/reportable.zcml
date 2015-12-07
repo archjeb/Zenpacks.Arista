@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser"
+           >
+  <!-- Define the reportable schema -->
+
+  <adapter factory=".reportable.AristaDeviceReportable"
+               for=".AristaDevice.AristaDevice"
+               provides="Products.Zuul.interfaces.IReportable"
+           />
+  <adapter factory=".reportable.AristaCPUReportable"
+               for=".AristaCPU.AristaCPU"
+               provides="Products.Zuul.interfaces.IReportable"
+           />
+  <adapter factory=".reportable.AristaMemoryReportable"
+               for=".AristaMemory.AristaMemory"
+               provides="Products.Zuul.interfaces.IReportable"
+           />
+  <adapter factory=".reportable.AristaTemperatureReportable"
+               for=".AristaTemperature.AristaTemperature"
+               provides="Products.Zuul.interfaces.IReportable"
+           />
+</configure>

@@ -38,13 +38,17 @@
 # Arista switch modeler for Memory and filesystems
 
 import logging
+from Products.DataCollector.plugins.CollectorPlugin \
+    import SnmpPlugin, GetTableMap
+
 log = logging.getLogger('zen.Arista')
 
-from Products.DataCollector.plugins.CollectorPlugin \
-    import SnmpPlugin, GetMap, GetTableMap
-
-from Products.DataCollector.plugins.DataMaps import MultiArgs, ObjectMap
-
+STORAGETYPES = {
+    '.1.3.6.1.2.1.25.2.1.2': 'RAM',
+    '.1.3.6.1.2.1.25.2.1.5': 'Removable Disk',
+    '.1.3.6.1.2.1.25.2.1.3': 'Virtual Memory',
+    '.1.3.6.1.2.1.25.2.1.9': 'Flash'
+}
 
 
 class AristaMemory(SnmpPlugin):
@@ -60,39 +64,28 @@ class AristaMemory(SnmpPlugin):
                         '.4': 'hrStorageAllocationUnits',
                         '.5': 'hrStorageSize',
                         '.6': 'hrStorageUsed',
-                    }
-        ),
-    )    
+                    }),
+    )
 
     def process(self, device, results, log):
-        storagelist = results[1].get('hrStorageEntry',{})
+        storages = results[1].get('hrStorageEntry', {})
         rm = self.relMap()
-        for snmpindex, row in storagelist.items():
+        for index, row in storages.items():
+            storagetype = row.get('hrStorageType')
             name = row.get('hrStorageDescr')
-            storagesize = row.get('hrStorageSize')
-            storageunits = row.get('hrStorageAllocationUnits')
-            storagetype = row.get('hrStorageType') 
+            size = row.get('hrStorageSize')
+            units = row.get('hrStorageAllocationUnits')
+
             if not name:
-                log.warn('ignore memory or storage  with no name')
+                log.warn('Skip memory without name')
                 continue
 
             om = self.objectMap()
-            #Sanitize name
             om.id = self.prepId(name)
             om.title = name
-            om.snmpindex = snmpindex.strip('.')
-            om.arista_storage_alloc_units = storageunits
-            if storagetype == '.1.3.6.1.2.1.25.2.1.2':
-                om.arista_storage_type = 'RAM'
-            elif storagetype == '.1.3.6.1.2.1.25.2.1.9':
-                om.arista_storage_type = 'Flash' 
-            elif storagetype == '.1.3.6.1.2.1.25.2.1.3':
-                om.arista_storage_type = 'Virtual Memory'
-            elif storagetype == '.1.3.6.1.2.1.25.2.1.5':
-                om.arista_storage_type = 'Removable Disk'
-            else:
-                om.arista_storage_type = 'Unknown'
-            om.arista_storage_size = storagesize
+            om.snmpindex = index.strip('.')
+            om.arista_storage_alloc_units = units
+            om.arista_storage_type = STORAGETYPES.get(storagetype, 'Unknown')
+            om.arista_storage_size = size
             rm.append(om)
-  
         return rm

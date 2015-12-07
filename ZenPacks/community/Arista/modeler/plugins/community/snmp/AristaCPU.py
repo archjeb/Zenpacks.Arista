@@ -36,16 +36,13 @@
 #       0.7.0 - initial release
 #
 
-# Modeler for CPU  
+# Modeler for CPU
 
 import logging
-log = logging.getLogger('zen.Arista')
-
 from Products.DataCollector.plugins.CollectorPlugin \
-    import SnmpPlugin, GetMap, GetTableMap
+    import SnmpPlugin, GetTableMap
 
-from Products.DataCollector.plugins.DataMaps import MultiArgs, ObjectMap
-
+log = logging.getLogger('zen.Arista')
 
 
 class AristaCPU(SnmpPlugin):
@@ -56,25 +53,23 @@ class AristaCPU(SnmpPlugin):
                     '.1.3.6.1.2.1.25.3.2.1',
                     {
                         '.3': 'hrDeviceDescr',
-                    }
-        ),
-    )    
+                    }),
+    )
 
     def process(self, device, results, log):
-        cpulist = results[1].get('hrDeviceEntry',{})
+        log.info('Modeler {} processing data for device {}'.format(
+                 self.name(), device.id))
         rm = self.relMap()
-        for snmpindex, row in cpulist.items():
-            name = row.get('hrDeviceDescr')
-            if not name:
-                log.warn('ignore CPU with no name')
+        cpus = results[1].get('hrDeviceEntry', {})
+
+        for index, value in cpus.items():
+            name = value.get('hrDeviceDescr')
+            if name is None:
+                log.warn('Skip CPU without name')
                 continue
- 
             om = self.objectMap()
-            #Sanitize name
-            om.id = self.prepId(name) 
+            om.id = self.prepId(name)
             om.title = name
-            om.snmpindex = snmpindex.strip('.')
+            om.snmpindex = index.strip('.')
             rm.append(om)
-        log.info('Modeler %s processing data for device %s',self.name(), device.id)
-        
         return rm
