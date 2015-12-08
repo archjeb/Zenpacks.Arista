@@ -189,19 +189,23 @@ classes:
         label: Arista Switch Model
   AristaCPU:
     meta_type: AristaCPU
-    label: Arista CPU
+    label: CPU
+    monitoring_templates: [AristaCPU]
     dynamicview_views: [service_view]
     dynamicview_relations:
       impacts: [cpu_device]
   AristaTemperature:
     meta_type: AristaTemperature
-    label: Arista Temperature
+    label: Temperature Sensor
+    monitoring_templates: [AristaTemperature]
     dynamicview_views: [service_view]
     dynamicview_relations:
       impacts: [sensor_device]
   AristaMemory:
     meta_type: AristaMemory
-    label: Arista Memory
+    label: Memory
+    plural_label: Memory
+    monitoring_templates: [AristaMemory]
     dynamicview_views: [service_view]
     dynamicview_relations:
       impacts: [memory_device]

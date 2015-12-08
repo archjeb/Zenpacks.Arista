@@ -72,7 +72,7 @@
         <item resourceId="JoinTree_1.dim_device.arista_switch_model" dimensionOrMeasure="Dimension" id="dim_device_arista_switch_model" label="Arista Switch Model"/>
       </items>
     </itemGroup>
-    <itemGroup resourceId="JoinTree_1" label="Arista CPUs" id="set_arista_cpu" description="">
+    <itemGroup resourceId="JoinTree_1" label="CPUs" id="set_arista_cpu" description="">
       <itemGroups>
         <itemGroup resourceId="JoinTree_1" label="Measures" id="set_arista_cpu_measures" description="">
           <itemGroups/>
@@ -91,10 +91,10 @@
         </itemGroup>
       </itemGroups>
       <items>
-        <item resourceId="JoinTree_1.dim_arista_cpu.arista_cpu_name" dimensionOrMeasure="Dimension" id="dim_arista_cpu_arista_cpu_name" label="Arista CPU Name"/>
+        <item resourceId="JoinTree_1.dim_arista_cpu.arista_cpu_name" dimensionOrMeasure="Dimension" id="dim_arista_cpu_arista_cpu_name" label="CPU Name"/>
       </items>
     </itemGroup>
-    <itemGroup resourceId="JoinTree_1" label="Arista Memorys" id="set_arista_memory" description="">
+    <itemGroup resourceId="JoinTree_1" label="Memory" id="set_arista_memory" description="">
       <itemGroups>
         <itemGroup resourceId="JoinTree_1" label="Measures" id="set_arista_memory_measures" description="">
           <itemGroups/>
@@ -133,13 +133,13 @@
         </itemGroup>
       </itemGroups>
       <items>
-        <item resourceId="JoinTree_1.dim_arista_memory.arista_memory_name" dimensionOrMeasure="Dimension" id="dim_arista_memory_arista_memory_name" label="Arista Memory Name"/>
+        <item resourceId="JoinTree_1.dim_arista_memory.arista_memory_name" dimensionOrMeasure="Dimension" id="dim_arista_memory_arista_memory_name" label="Memory Name"/>
         <item resourceId="JoinTree_1.dim_arista_memory.arista_storage_type" dimensionOrMeasure="Dimension" id="dim_arista_memory_arista_storage_type" label="Arista Storage Type"/>
         <item resourceId="JoinTree_1.dim_arista_memory.arista_storage_alloc_units" dimensionOrMeasure="Dimension" id="dim_arista_memory_arista_storage_alloc_units" label="Arista Storage Allocation Units"/>
         <item resourceId="JoinTree_1.dim_arista_memory.arista_storage_size" dimensionOrMeasure="Dimension" id="dim_arista_memory_arista_storage_size" label="Arista Storage Size"/>
       </items>
     </itemGroup>
-    <itemGroup resourceId="JoinTree_1" label="Arista Temperatures" id="set_arista_temperature" description="">
+    <itemGroup resourceId="JoinTree_1" label="Temperature Sensors" id="set_arista_temperature" description="">
       <itemGroups>
         <itemGroup resourceId="JoinTree_1" label="Measures" id="set_arista_temperature_measures" description="">
           <itemGroups/>
@@ -158,7 +158,7 @@
         </itemGroup>
       </itemGroups>
       <items>
-        <item resourceId="JoinTree_1.dim_arista_temperature.arista_temperature_name" dimensionOrMeasure="Dimension" id="dim_arista_temperature_arista_temperature_name" label="Arista Temperature Name"/>
+        <item resourceId="JoinTree_1.dim_arista_temperature.arista_temperature_name" dimensionOrMeasure="Dimension" id="dim_arista_temperature_arista_temperature_name" label="Temperature Sensor Name"/>
       </items>
     </itemGroup>
   </itemGroups>
