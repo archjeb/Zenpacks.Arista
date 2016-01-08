@@ -1,0 +1,813 @@
+<?xml version='1.0' encoding='utf-8'?>
+<schema version="1.0" xmlns="http://www.jaspersoft.com/2007/SL/XMLSchema">
+  <itemGroups>
+    <itemGroup resourceId="JoinTree_1" label="Devices" id="set_device" description="">
+      <itemGroups>
+        <itemGroup resourceId="JoinTree_1" label="Measures" id="set_device_measures" description="">
+          <itemGroups/>
+          <items>
+            <item resourceId="JoinTree_1.daily_snmpinbadcommunitynames__count.fct_ts" dimensionOrMeasure="Dimension" id="daily_snmpinbadcommunitynames__count_fct_ts" label="snmpinbadcommunitynames__count / daily / TS"/>
+            <item resourceId="JoinTree_1.daily_snmpinbadcommunitynames__count.fct_ts_gmt" dimensionOrMeasure="Dimension" id="daily_snmpinbadcommunitynames__count_fct_ts_gmt" label="snmpinbadcommunitynames__count / daily / TS GMT"/>
+            <item resourceId="JoinTree_1.daily_snmpinbadcommunitynames__count.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_snmpinbadcommunitynames__count_fct_avg" label="snmpinbadcommunitynames__count / daily / Average"/>
+            <item resourceId="JoinTree_1.daily_snmpinbadcommunitynames__count.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_snmpinbadcommunitynames__count_fct_max" label="snmpinbadcommunitynames__count / daily / Highest"/>
+            <item resourceId="JoinTree_1.daily_snmpinbadcommunitynames__count.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_snmpinbadcommunitynames__count_fct_min" label="snmpinbadcommunitynames__count / daily / Lowest"/>
+            <item resourceId="JoinTree_1.hourly_snmpinbadcommunitynames__count.fct_ts" dimensionOrMeasure="Dimension" id="hourly_snmpinbadcommunitynames__count_fct_ts" label="snmpinbadcommunitynames__count / hourly / TS"/>
+            <item resourceId="JoinTree_1.hourly_snmpinbadcommunitynames__count.fct_ts_gmt" dimensionOrMeasure="Dimension" id="hourly_snmpinbadcommunitynames__count_fct_ts_gmt" label="snmpinbadcommunitynames__count / hourly / TS GMT"/>
+            <item resourceId="JoinTree_1.hourly_snmpinbadcommunitynames__count.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_snmpinbadcommunitynames__count_fct_avg" label="snmpinbadcommunitynames__count / hourly / Average"/>
+            <item resourceId="JoinTree_1.hourly_snmpinbadcommunitynames__count.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_snmpinbadcommunitynames__count_fct_max" label="snmpinbadcommunitynames__count / hourly / Highest"/>
+            <item resourceId="JoinTree_1.hourly_snmpinbadcommunitynames__count.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_snmpinbadcommunitynames__count_fct_min" label="snmpinbadcommunitynames__count / hourly / Lowest"/>
+            <item resourceId="JoinTree_1.daily_snmpinbadversions__count.fct_ts" dimensionOrMeasure="Dimension" id="daily_snmpinbadversions__count_fct_ts" label="snmpinbadversions__count / daily / TS"/>
+            <item resourceId="JoinTree_1.daily_snmpinbadversions__count.fct_ts_gmt" dimensionOrMeasure="Dimension" id="daily_snmpinbadversions__count_fct_ts_gmt" label="snmpinbadversions__count / daily / TS GMT"/>
+            <item resourceId="JoinTree_1.daily_snmpinbadversions__count.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_snmpinbadversions__count_fct_avg" label="snmpinbadversions__count / daily / Average"/>
+            <item resourceId="JoinTree_1.daily_snmpinbadversions__count.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_snmpinbadversions__count_fct_max" label="snmpinbadversions__count / daily / Highest"/>
+            <item resourceId="JoinTree_1.daily_snmpinbadversions__count.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_snmpinbadversions__count_fct_min" label="snmpinbadversions__count / daily / Lowest"/>
+            <item resourceId="JoinTree_1.hourly_snmpinbadversions__count.fct_ts" dimensionOrMeasure="Dimension" id="hourly_snmpinbadversions__count_fct_ts" label="snmpinbadversions__count / hourly / TS"/>
+            <item resourceId="JoinTree_1.hourly_snmpinbadversions__count.fct_ts_gmt" dimensionOrMeasure="Dimension" id="hourly_snmpinbadversions__count_fct_ts_gmt" label="snmpinbadversions__count / hourly / TS GMT"/>
+            <item resourceId="JoinTree_1.hourly_snmpinbadversions__count.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_snmpinbadversions__count_fct_avg" label="snmpinbadversions__count / hourly / Average"/>
+            <item resourceId="JoinTree_1.hourly_snmpinbadversions__count.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_snmpinbadversions__count_fct_max" label="snmpinbadversions__count / hourly / Highest"/>
+            <item resourceId="JoinTree_1.hourly_snmpinbadversions__count.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_snmpinbadversions__count_fct_min" label="snmpinbadversions__count / hourly / Lowest"/>
+            <item resourceId="JoinTree_1.daily_snmpinpkts__count.fct_ts" dimensionOrMeasure="Dimension" id="daily_snmpinpkts__count_fct_ts" label="snmpinpkts__count / daily / TS"/>
+            <item resourceId="JoinTree_1.daily_snmpinpkts__count.fct_ts_gmt" dimensionOrMeasure="Dimension" id="daily_snmpinpkts__count_fct_ts_gmt" label="snmpinpkts__count / daily / TS GMT"/>
+            <item resourceId="JoinTree_1.daily_snmpinpkts__count.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_snmpinpkts__count_fct_avg" label="snmpinpkts__count / daily / Average"/>
+            <item resourceId="JoinTree_1.daily_snmpinpkts__count.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_snmpinpkts__count_fct_max" label="snmpinpkts__count / daily / Highest"/>
+            <item resourceId="JoinTree_1.daily_snmpinpkts__count.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_snmpinpkts__count_fct_min" label="snmpinpkts__count / daily / Lowest"/>
+            <item resourceId="JoinTree_1.hourly_snmpinpkts__count.fct_ts" dimensionOrMeasure="Dimension" id="hourly_snmpinpkts__count_fct_ts" label="snmpinpkts__count / hourly / TS"/>
+            <item resourceId="JoinTree_1.hourly_snmpinpkts__count.fct_ts_gmt" dimensionOrMeasure="Dimension" id="hourly_snmpinpkts__count_fct_ts_gmt" label="snmpinpkts__count / hourly / TS GMT"/>
+            <item resourceId="JoinTree_1.hourly_snmpinpkts__count.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_snmpinpkts__count_fct_avg" label="snmpinpkts__count / hourly / Average"/>
+            <item resourceId="JoinTree_1.hourly_snmpinpkts__count.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_snmpinpkts__count_fct_max" label="snmpinpkts__count / hourly / Highest"/>
+            <item resourceId="JoinTree_1.hourly_snmpinpkts__count.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_snmpinpkts__count_fct_min" label="snmpinpkts__count / hourly / Lowest"/>
+            <item resourceId="JoinTree_1.daily_snmpintotalreqvars__count.fct_ts" dimensionOrMeasure="Dimension" id="daily_snmpintotalreqvars__count_fct_ts" label="snmpintotalreqvars__count / daily / TS"/>
+            <item resourceId="JoinTree_1.daily_snmpintotalreqvars__count.fct_ts_gmt" dimensionOrMeasure="Dimension" id="daily_snmpintotalreqvars__count_fct_ts_gmt" label="snmpintotalreqvars__count / daily / TS GMT"/>
+            <item resourceId="JoinTree_1.daily_snmpintotalreqvars__count.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_snmpintotalreqvars__count_fct_avg" label="snmpintotalreqvars__count / daily / Average"/>
+            <item resourceId="JoinTree_1.daily_snmpintotalreqvars__count.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_snmpintotalreqvars__count_fct_max" label="snmpintotalreqvars__count / daily / Highest"/>
+            <item resourceId="JoinTree_1.daily_snmpintotalreqvars__count.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_snmpintotalreqvars__count_fct_min" label="snmpintotalreqvars__count / daily / Lowest"/>
+            <item resourceId="JoinTree_1.hourly_snmpintotalreqvars__count.fct_ts" dimensionOrMeasure="Dimension" id="hourly_snmpintotalreqvars__count_fct_ts" label="snmpintotalreqvars__count / hourly / TS"/>
+            <item resourceId="JoinTree_1.hourly_snmpintotalreqvars__count.fct_ts_gmt" dimensionOrMeasure="Dimension" id="hourly_snmpintotalreqvars__count_fct_ts_gmt" label="snmpintotalreqvars__count / hourly / TS GMT"/>
+            <item resourceId="JoinTree_1.hourly_snmpintotalreqvars__count.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_snmpintotalreqvars__count_fct_avg" label="snmpintotalreqvars__count / hourly / Average"/>
+            <item resourceId="JoinTree_1.hourly_snmpintotalreqvars__count.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_snmpintotalreqvars__count_fct_max" label="snmpintotalreqvars__count / hourly / Highest"/>
+            <item resourceId="JoinTree_1.hourly_snmpintotalreqvars__count.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_snmpintotalreqvars__count_fct_min" label="snmpintotalreqvars__count / hourly / Lowest"/>
+            <item resourceId="JoinTree_1.daily_snmpoutpkts__count.fct_ts" dimensionOrMeasure="Dimension" id="daily_snmpoutpkts__count_fct_ts" label="snmpoutpkts__count / daily / TS"/>
+            <item resourceId="JoinTree_1.daily_snmpoutpkts__count.fct_ts_gmt" dimensionOrMeasure="Dimension" id="daily_snmpoutpkts__count_fct_ts_gmt" label="snmpoutpkts__count / daily / TS GMT"/>
+            <item resourceId="JoinTree_1.daily_snmpoutpkts__count.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_snmpoutpkts__count_fct_avg" label="snmpoutpkts__count / daily / Average"/>
+            <item resourceId="JoinTree_1.daily_snmpoutpkts__count.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_snmpoutpkts__count_fct_max" label="snmpoutpkts__count / daily / Highest"/>
+            <item resourceId="JoinTree_1.daily_snmpoutpkts__count.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_snmpoutpkts__count_fct_min" label="snmpoutpkts__count / daily / Lowest"/>
+            <item resourceId="JoinTree_1.hourly_snmpoutpkts__count.fct_ts" dimensionOrMeasure="Dimension" id="hourly_snmpoutpkts__count_fct_ts" label="snmpoutpkts__count / hourly / TS"/>
+            <item resourceId="JoinTree_1.hourly_snmpoutpkts__count.fct_ts_gmt" dimensionOrMeasure="Dimension" id="hourly_snmpoutpkts__count_fct_ts_gmt" label="snmpoutpkts__count / hourly / TS GMT"/>
+            <item resourceId="JoinTree_1.hourly_snmpoutpkts__count.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_snmpoutpkts__count_fct_avg" label="snmpoutpkts__count / hourly / Average"/>
+            <item resourceId="JoinTree_1.hourly_snmpoutpkts__count.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_snmpoutpkts__count_fct_max" label="snmpoutpkts__count / hourly / Highest"/>
+            <item resourceId="JoinTree_1.hourly_snmpoutpkts__count.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_snmpoutpkts__count_fct_min" label="snmpoutpkts__count / hourly / Lowest"/>
+          </items>
+        </itemGroup>
+      </itemGroups>
+      <items>
+        <item resourceId="JoinTree_1.dim_device.device_name" dimensionOrMeasure="Dimension" id="dim_device_device_name" label="Device Name"/>
+        <item resourceId="JoinTree_1.dim_device.device_manage_ip" dimensionOrMeasure="Dimension" id="dim_device_device_manage_ip" label="Management IP Address"/>
+        <item resourceId="JoinTree_1.dim_device.device_hw_manufacturer" dimensionOrMeasure="Dimension" id="dim_device_device_hw_manufacturer" label="Hardware Manufacturer"/>
+        <item resourceId="JoinTree_1.dim_device.device_hw_product" dimensionOrMeasure="Dimension" id="dim_device_device_hw_product" label="Hardware Model"/>
+        <item resourceId="JoinTree_1.dim_device.device_hw_serial_number" dimensionOrMeasure="Dimension" id="dim_device_device_hw_serial_number" label="Hardware Serial Number"/>
+        <item resourceId="JoinTree_1.dim_device.arista_switch_serial" dimensionOrMeasure="Dimension" id="dim_device_arista_switch_serial" label="Arista Switch Serial"/>
+        <item resourceId="JoinTree_1.dim_device.arista_switch_memory" dimensionOrMeasure="Dimension" id="dim_device_arista_switch_memory" label="Arista Switch Memory"/>
+        <item resourceId="JoinTree_1.dim_device.arista_switch_version" dimensionOrMeasure="Dimension" id="dim_device_arista_switch_version" label="Arista Switch Version"/>
+        <item resourceId="JoinTree_1.dim_device.arista_switch_mac" dimensionOrMeasure="Dimension" id="dim_device_arista_switch_mac" label="Arista Switch MAC"/>
+        <item resourceId="JoinTree_1.dim_device.arista_switch_model" dimensionOrMeasure="Dimension" id="dim_device_arista_switch_model" label="Arista Switch Model"/>
+      </items>
+    </itemGroup>
+    <itemGroup resourceId="JoinTree_1" label="CPUs" id="set_arista_cpu" description="">
+      <itemGroups>
+        <itemGroup resourceId="JoinTree_1" label="Measures" id="set_arista_cpu_measures" description="">
+          <itemGroups/>
+          <items>
+            <item resourceId="JoinTree_1.daily_hrprocessorload__pct.fct_ts" dimensionOrMeasure="Dimension" id="daily_hrprocessorload__pct_fct_ts" label="hrprocessorload__pct / daily / TS"/>
+            <item resourceId="JoinTree_1.daily_hrprocessorload__pct.fct_ts_gmt" dimensionOrMeasure="Dimension" id="daily_hrprocessorload__pct_fct_ts_gmt" label="hrprocessorload__pct / daily / TS GMT"/>
+            <item resourceId="JoinTree_1.daily_hrprocessorload__pct.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_hrprocessorload__pct_fct_avg" label="hrprocessorload__pct / daily / Average"/>
+            <item resourceId="JoinTree_1.daily_hrprocessorload__pct.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_hrprocessorload__pct_fct_max" label="hrprocessorload__pct / daily / Highest"/>
+            <item resourceId="JoinTree_1.daily_hrprocessorload__pct.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_hrprocessorload__pct_fct_min" label="hrprocessorload__pct / daily / Lowest"/>
+            <item resourceId="JoinTree_1.hourly_hrprocessorload__pct.fct_ts" dimensionOrMeasure="Dimension" id="hourly_hrprocessorload__pct_fct_ts" label="hrprocessorload__pct / hourly / TS"/>
+            <item resourceId="JoinTree_1.hourly_hrprocessorload__pct.fct_ts_gmt" dimensionOrMeasure="Dimension" id="hourly_hrprocessorload__pct_fct_ts_gmt" label="hrprocessorload__pct / hourly / TS GMT"/>
+            <item resourceId="JoinTree_1.hourly_hrprocessorload__pct.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_hrprocessorload__pct_fct_avg" label="hrprocessorload__pct / hourly / Average"/>
+            <item resourceId="JoinTree_1.hourly_hrprocessorload__pct.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_hrprocessorload__pct_fct_max" label="hrprocessorload__pct / hourly / Highest"/>
+            <item resourceId="JoinTree_1.hourly_hrprocessorload__pct.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_hrprocessorload__pct_fct_min" label="hrprocessorload__pct / hourly / Lowest"/>
+          </items>
+        </itemGroup>
+      </itemGroups>
+      <items>
+        <item resourceId="JoinTree_1.dim_arista_cpu.arista_cpu_name" dimensionOrMeasure="Dimension" id="dim_arista_cpu_arista_cpu_name" label="CPU Name"/>
+      </items>
+    </itemGroup>
+    <itemGroup resourceId="JoinTree_1" label="Memory" id="set_arista_memory" description="">
+      <itemGroups>
+        <itemGroup resourceId="JoinTree_1" label="Measures" id="set_arista_memory_measures" description="">
+          <itemGroups/>
+          <items>
+            <item resourceId="JoinTree_1.daily_hrstorageallocationunits__bytes.fct_ts" dimensionOrMeasure="Dimension" id="daily_hrstorageallocationunits__bytes_fct_ts" label="hrstorageallocationunits__bytes / daily / TS"/>
+            <item resourceId="JoinTree_1.daily_hrstorageallocationunits__bytes.fct_ts_gmt" dimensionOrMeasure="Dimension" id="daily_hrstorageallocationunits__bytes_fct_ts_gmt" label="hrstorageallocationunits__bytes / daily / TS GMT"/>
+            <item resourceId="JoinTree_1.daily_hrstorageallocationunits__bytes.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_hrstorageallocationunits__bytes_fct_avg" label="hrstorageallocationunits__bytes / daily / Average"/>
+            <item resourceId="JoinTree_1.daily_hrstorageallocationunits__bytes.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_hrstorageallocationunits__bytes_fct_max" label="hrstorageallocationunits__bytes / daily / Highest"/>
+            <item resourceId="JoinTree_1.daily_hrstorageallocationunits__bytes.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_hrstorageallocationunits__bytes_fct_min" label="hrstorageallocationunits__bytes / daily / Lowest"/>
+            <item resourceId="JoinTree_1.hourly_hrstorageallocationunits__bytes.fct_ts" dimensionOrMeasure="Dimension" id="hourly_hrstorageallocationunits__bytes_fct_ts" label="hrstorageallocationunits__bytes / hourly / TS"/>
+            <item resourceId="JoinTree_1.hourly_hrstorageallocationunits__bytes.fct_ts_gmt" dimensionOrMeasure="Dimension" id="hourly_hrstorageallocationunits__bytes_fct_ts_gmt" label="hrstorageallocationunits__bytes / hourly / TS GMT"/>
+            <item resourceId="JoinTree_1.hourly_hrstorageallocationunits__bytes.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_hrstorageallocationunits__bytes_fct_avg" label="hrstorageallocationunits__bytes / hourly / Average"/>
+            <item resourceId="JoinTree_1.hourly_hrstorageallocationunits__bytes.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_hrstorageallocationunits__bytes_fct_max" label="hrstorageallocationunits__bytes / hourly / Highest"/>
+            <item resourceId="JoinTree_1.hourly_hrstorageallocationunits__bytes.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_hrstorageallocationunits__bytes_fct_min" label="hrstorageallocationunits__bytes / hourly / Lowest"/>
+            <item resourceId="JoinTree_1.daily_hrstoragesize__bytes.fct_ts" dimensionOrMeasure="Dimension" id="daily_hrstoragesize__bytes_fct_ts" label="hrstoragesize__bytes / daily / TS"/>
+            <item resourceId="JoinTree_1.daily_hrstoragesize__bytes.fct_ts_gmt" dimensionOrMeasure="Dimension" id="daily_hrstoragesize__bytes_fct_ts_gmt" label="hrstoragesize__bytes / daily / TS GMT"/>
+            <item resourceId="JoinTree_1.daily_hrstoragesize__bytes.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_hrstoragesize__bytes_fct_avg" label="hrstoragesize__bytes / daily / Average"/>
+            <item resourceId="JoinTree_1.daily_hrstoragesize__bytes.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_hrstoragesize__bytes_fct_max" label="hrstoragesize__bytes / daily / Highest"/>
+            <item resourceId="JoinTree_1.daily_hrstoragesize__bytes.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_hrstoragesize__bytes_fct_min" label="hrstoragesize__bytes / daily / Lowest"/>
+            <item resourceId="JoinTree_1.hourly_hrstoragesize__bytes.fct_ts" dimensionOrMeasure="Dimension" id="hourly_hrstoragesize__bytes_fct_ts" label="hrstoragesize__bytes / hourly / TS"/>
+            <item resourceId="JoinTree_1.hourly_hrstoragesize__bytes.fct_ts_gmt" dimensionOrMeasure="Dimension" id="hourly_hrstoragesize__bytes_fct_ts_gmt" label="hrstoragesize__bytes / hourly / TS GMT"/>
+            <item resourceId="JoinTree_1.hourly_hrstoragesize__bytes.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_hrstoragesize__bytes_fct_avg" label="hrstoragesize__bytes / hourly / Average"/>
+            <item resourceId="JoinTree_1.hourly_hrstoragesize__bytes.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_hrstoragesize__bytes_fct_max" label="hrstoragesize__bytes / hourly / Highest"/>
+            <item resourceId="JoinTree_1.hourly_hrstoragesize__bytes.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_hrstoragesize__bytes_fct_min" label="hrstoragesize__bytes / hourly / Lowest"/>
+            <item resourceId="JoinTree_1.daily_hrstorageused__bytes.fct_ts" dimensionOrMeasure="Dimension" id="daily_hrstorageused__bytes_fct_ts" label="hrstorageused__bytes / daily / TS"/>
+            <item resourceId="JoinTree_1.daily_hrstorageused__bytes.fct_ts_gmt" dimensionOrMeasure="Dimension" id="daily_hrstorageused__bytes_fct_ts_gmt" label="hrstorageused__bytes / daily / TS GMT"/>
+            <item resourceId="JoinTree_1.daily_hrstorageused__bytes.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_hrstorageused__bytes_fct_avg" label="hrstorageused__bytes / daily / Average"/>
+            <item resourceId="JoinTree_1.daily_hrstorageused__bytes.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_hrstorageused__bytes_fct_max" label="hrstorageused__bytes / daily / Highest"/>
+            <item resourceId="JoinTree_1.daily_hrstorageused__bytes.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_hrstorageused__bytes_fct_min" label="hrstorageused__bytes / daily / Lowest"/>
+            <item resourceId="JoinTree_1.hourly_hrstorageused__bytes.fct_ts" dimensionOrMeasure="Dimension" id="hourly_hrstorageused__bytes_fct_ts" label="hrstorageused__bytes / hourly / TS"/>
+            <item resourceId="JoinTree_1.hourly_hrstorageused__bytes.fct_ts_gmt" dimensionOrMeasure="Dimension" id="hourly_hrstorageused__bytes_fct_ts_gmt" label="hrstorageused__bytes / hourly / TS GMT"/>
+            <item resourceId="JoinTree_1.hourly_hrstorageused__bytes.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_hrstorageused__bytes_fct_avg" label="hrstorageused__bytes / hourly / Average"/>
+            <item resourceId="JoinTree_1.hourly_hrstorageused__bytes.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_hrstorageused__bytes_fct_max" label="hrstorageused__bytes / hourly / Highest"/>
+            <item resourceId="JoinTree_1.hourly_hrstorageused__bytes.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_hrstorageused__bytes_fct_min" label="hrstorageused__bytes / hourly / Lowest"/>
+          </items>
+        </itemGroup>
+      </itemGroups>
+      <items>
+        <item resourceId="JoinTree_1.dim_arista_memory.arista_memory_name" dimensionOrMeasure="Dimension" id="dim_arista_memory_arista_memory_name" label="Memory Name"/>
+        <item resourceId="JoinTree_1.dim_arista_memory.arista_storage_type" dimensionOrMeasure="Dimension" id="dim_arista_memory_arista_storage_type" label="Arista Storage Type"/>
+        <item resourceId="JoinTree_1.dim_arista_memory.arista_storage_alloc_units" dimensionOrMeasure="Dimension" id="dim_arista_memory_arista_storage_alloc_units" label="Arista Storage Allocation Units"/>
+        <item resourceId="JoinTree_1.dim_arista_memory.arista_storage_size" dimensionOrMeasure="Dimension" id="dim_arista_memory_arista_storage_size" label="Arista Storage Size"/>
+      </items>
+    </itemGroup>
+    <itemGroup resourceId="JoinTree_1" label="Temperature Sensors" id="set_arista_temperature" description="">
+      <itemGroups>
+        <itemGroup resourceId="JoinTree_1" label="Measures" id="set_arista_temperature_measures" description="">
+          <itemGroups/>
+          <items>
+            <item resourceId="JoinTree_1.daily_entphysensorvalue__degrees.fct_ts" dimensionOrMeasure="Dimension" id="daily_entphysensorvalue__degrees_fct_ts" label="entphysensorvalue__degrees / daily / TS"/>
+            <item resourceId="JoinTree_1.daily_entphysensorvalue__degrees.fct_ts_gmt" dimensionOrMeasure="Dimension" id="daily_entphysensorvalue__degrees_fct_ts_gmt" label="entphysensorvalue__degrees / daily / TS GMT"/>
+            <item resourceId="JoinTree_1.daily_entphysensorvalue__degrees.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_entphysensorvalue__degrees_fct_avg" label="entphysensorvalue__degrees / daily / Average"/>
+            <item resourceId="JoinTree_1.daily_entphysensorvalue__degrees.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_entphysensorvalue__degrees_fct_max" label="entphysensorvalue__degrees / daily / Highest"/>
+            <item resourceId="JoinTree_1.daily_entphysensorvalue__degrees.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="daily_entphysensorvalue__degrees_fct_min" label="entphysensorvalue__degrees / daily / Lowest"/>
+            <item resourceId="JoinTree_1.hourly_entphysensorvalue__degrees.fct_ts" dimensionOrMeasure="Dimension" id="hourly_entphysensorvalue__degrees_fct_ts" label="entphysensorvalue__degrees / hourly / TS"/>
+            <item resourceId="JoinTree_1.hourly_entphysensorvalue__degrees.fct_ts_gmt" dimensionOrMeasure="Dimension" id="hourly_entphysensorvalue__degrees_fct_ts_gmt" label="entphysensorvalue__degrees / hourly / TS GMT"/>
+            <item resourceId="JoinTree_1.hourly_entphysensorvalue__degrees.fct_avg" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_entphysensorvalue__degrees_fct_avg" label="entphysensorvalue__degrees / hourly / Average"/>
+            <item resourceId="JoinTree_1.hourly_entphysensorvalue__degrees.fct_max" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_entphysensorvalue__degrees_fct_max" label="entphysensorvalue__degrees / hourly / Highest"/>
+            <item resourceId="JoinTree_1.hourly_entphysensorvalue__degrees.fct_min" dimensionOrMeasure="Measure" defaultAgg="Average" id="hourly_entphysensorvalue__degrees_fct_min" label="entphysensorvalue__degrees / hourly / Lowest"/>
+          </items>
+        </itemGroup>
+      </itemGroups>
+      <items>
+        <item resourceId="JoinTree_1.dim_arista_temperature.arista_temperature_name" dimensionOrMeasure="Dimension" id="dim_arista_temperature_arista_temperature_name" label="Temperature Sensor Name"/>
+      </items>
+    </itemGroup>
+  </itemGroups>
+  <items>
+    <item resourceId="JoinTree_1.dim_date.date_date" dimensionOrMeasure="Dimension" id="dim_date_date_date" label="Date"/>
+  </items>
+  <resources>
+    <jdbcTable tableName="dim_device" datasourceId="zenoss_reporting" id="dim_device">
+      <fieldList>
+        <field type="java.lang.Integer" id="device_key"/>
+        <field type="java.sql.Timestamp" id="device_deleted_at"/>
+        <field type="java.lang.Boolean" id="device_deleted" dataSetExpression="if(device_deleted_at,null,0,1)"/>
+        <field type="java.lang.String" id="device_name"/>
+        <field type="java.lang.String" id="device_manage_ip"/>
+        <field type="java.lang.String" id="device_comments"/>
+        <field type="java.lang.String" id="device_uid"/>
+        <field type="java.lang.Double" id="device_production_state"/>
+        <field type="java.lang.String" id="device_production_state_name"/>
+        <field type="java.lang.String" id="device_class"/>
+        <field type="java.lang.String" id="device_collector"/>
+        <field type="java.lang.String" id="device_hw_manufacturer"/>
+        <field type="java.lang.String" id="device_hw_product"/>
+        <field type="java.lang.String" id="device_hw_serial_number"/>
+        <field type="java.lang.String" id="device_hw_asset_tag"/>
+        <field type="java.lang.Double" id="device_total_swap"/>
+        <field type="java.lang.Double" id="device_total_memory"/>
+        <field type="java.lang.String" id="device_os_manufacturer"/>
+        <field type="java.lang.String" id="device_os_product"/>
+        <field type="java.lang.String" id="device_os_uname"/>
+        <field type="java.lang.Double" id="device_os_uptime"/>
+        <field type="java.lang.String" id="device_availability"/>
+        <field type="java.util.Date" id="device_first_seen"/>
+        <field type="java.util.Date" id="device_last_change"/>
+        <field type="java.util.Date" id="device_last_model"/>
+        <field type="java.lang.String" id="device_rack_slot"/>
+        <field type="java.lang.String" id="device_sys_object_id"/>
+        <field type="java.lang.String" id="device_sys_descr"/>
+        <field type="java.lang.String" id="device_sys_name"/>
+        <field type="java.lang.String" id="device_sys_location"/>
+        <field type="java.lang.Boolean" id="device_is_monitored"/>
+        <field type="java.lang.String" id="arista_switch_serial"/>
+        <field type="java.lang.String" id="arista_switch_memory"/>
+        <field type="java.lang.String" id="arista_switch_version"/>
+        <field type="java.lang.String" id="arista_switch_mac"/>
+        <field type="java.lang.String" id="arista_switch_model"/>
+      </fieldList>
+      <filterString>contains(device_class, 'Arista')</filterString>
+    </jdbcTable>
+    <jdbcTable tableName="dim_date" datasourceId="zenoss_reporting" id="dim_date">
+      <fieldList>
+        <field type="java.lang.Integer" id="date_key"/>
+        <field type="java.util.Date" id="date_date"/>
+      </fieldList>
+    </jdbcTable>
+    <jdbcTable tableName="daily_snmpinbadcommunitynames__count" datasourceId="zenoss_reporting" id="daily_snmpinbadcommunitynames__count">
+      <fieldList>
+        <field type="java.lang.Integer" id="device_key"/>
+        <field type="java.lang.Integer" id="component_key"/>
+        <field type="java.util.Date" id="date_key"/>
+        <field type="java.sql.Timestamp" id="fct_ts"/>
+        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
+        <field type="java.lang.Double" id="fct_avg"/>
+        <field type="java.lang.Double" id="fct_max"/>
+        <field type="java.lang.Double" id="fct_min"/>
+      </fieldList>
+    </jdbcTable>
+    <jdbcTable tableName="hourly_snmpinbadcommunitynames__count" datasourceId="zenoss_reporting" id="hourly_snmpinbadcommunitynames__count">
+      <fieldList>
+        <field type="java.lang.Integer" id="device_key"/>
+        <field type="java.lang.Integer" id="component_key"/>
+        <field type="java.util.Date" id="date_key"/>
+        <field type="java.sql.Timestamp" id="fct_ts"/>
+        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
+        <field type="java.lang.Double" id="fct_avg"/>
+        <field type="java.lang.Double" id="fct_max"/>
+        <field type="java.lang.Double" id="fct_min"/>
+      </fieldList>
+    </jdbcTable>
+    <jdbcTable tableName="daily_snmpinbadversions__count" datasourceId="zenoss_reporting" id="daily_snmpinbadversions__count">
+      <fieldList>
+        <field type="java.lang.Integer" id="device_key"/>
+        <field type="java.lang.Integer" id="component_key"/>
+        <field type="java.util.Date" id="date_key"/>
+        <field type="java.sql.Timestamp" id="fct_ts"/>
+        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
+        <field type="java.lang.Double" id="fct_avg"/>
+        <field type="java.lang.Double" id="fct_max"/>
+        <field type="java.lang.Double" id="fct_min"/>
+      </fieldList>
+    </jdbcTable>
+    <jdbcTable tableName="hourly_snmpinbadversions__count" datasourceId="zenoss_reporting" id="hourly_snmpinbadversions__count">
+      <fieldList>
+        <field type="java.lang.Integer" id="device_key"/>
+        <field type="java.lang.Integer" id="component_key"/>
+        <field type="java.util.Date" id="date_key"/>
+        <field type="java.sql.Timestamp" id="fct_ts"/>
+        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
+        <field type="java.lang.Double" id="fct_avg"/>
+        <field type="java.lang.Double" id="fct_max"/>
+        <field type="java.lang.Double" id="fct_min"/>
+      </fieldList>
+    </jdbcTable>
+    <jdbcTable tableName="daily_snmpinpkts__count" datasourceId="zenoss_reporting" id="daily_snmpinpkts__count">
+      <fieldList>
+        <field type="java.lang.Integer" id="device_key"/>
+        <field type="java.lang.Integer" id="component_key"/>
+        <field type="java.util.Date" id="date_key"/>
+        <field type="java.sql.Timestamp" id="fct_ts"/>
+        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
+        <field type="java.lang.Double" id="fct_avg"/>
+        <field type="java.lang.Double" id="fct_max"/>
+        <field type="java.lang.Double" id="fct_min"/>
+      </fieldList>
+    </jdbcTable>
+    <jdbcTable tableName="hourly_snmpinpkts__count" datasourceId="zenoss_reporting" id="hourly_snmpinpkts__count">
+      <fieldList>
+        <field type="java.lang.Integer" id="device_key"/>
+        <field type="java.lang.Integer" id="component_key"/>
+        <field type="java.util.Date" id="date_key"/>
+        <field type="java.sql.Timestamp" id="fct_ts"/>
+        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
+        <field type="java.lang.Double" id="fct_avg"/>
+        <field type="java.lang.Double" id="fct_max"/>
+        <field type="java.lang.Double" id="fct_min"/>
+      </fieldList>
+    </jdbcTable>
+    <jdbcTable tableName="daily_snmpintotalreqvars__count" datasourceId="zenoss_reporting" id="daily_snmpintotalreqvars__count">
+      <fieldList>
+        <field type="java.lang.Integer" id="device_key"/>
+        <field type="java.lang.Integer" id="component_key"/>
+        <field type="java.util.Date" id="date_key"/>
+        <field type="java.sql.Timestamp" id="fct_ts"/>
+        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
+        <field type="java.lang.Double" id="fct_avg"/>
+        <field type="java.lang.Double" id="fct_max"/>
+        <field type="java.lang.Double" id="fct_min"/>
+      </fieldList>
+    </jdbcTable>
+    <jdbcTable tableName="hourly_snmpintotalreqvars__count" datasourceId="zenoss_reporting" id="hourly_snmpintotalreqvars__count">
+      <fieldList>
+        <field type="java.lang.Integer" id="device_key"/>
+        <field type="java.lang.Integer" id="component_key"/>
+        <field type="java.util.Date" id="date_key"/>
+        <field type="java.sql.Timestamp" id="fct_ts"/>
+        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
+        <field type="java.lang.Double" id="fct_avg"/>
+        <field type="java.lang.Double" id="fct_max"/>
+        <field type="java.lang.Double" id="fct_min"/>
+      </fieldList>
+    </jdbcTable>
+    <jdbcTable tableName="daily_snmpoutpkts__count" datasourceId="zenoss_reporting" id="daily_snmpoutpkts__count">
+      <fieldList>
+        <field type="java.lang.Integer" id="device_key"/>
+        <field type="java.lang.Integer" id="component_key"/>
+        <field type="java.util.Date" id="date_key"/>
+        <field type="java.sql.Timestamp" id="fct_ts"/>
+        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
+        <field type="java.lang.Double" id="fct_avg"/>
+        <field type="java.lang.Double" id="fct_max"/>
+        <field type="java.lang.Double" id="fct_min"/>
+      </fieldList>
+    </jdbcTable>
+    <jdbcTable tableName="hourly_snmpoutpkts__count" datasourceId="zenoss_reporting" id="hourly_snmpoutpkts__count">
+      <fieldList>
+        <field type="java.lang.Integer" id="device_key"/>
+        <field type="java.lang.Integer" id="component_key"/>
+        <field type="java.util.Date" id="date_key"/>
+        <field type="java.sql.Timestamp" id="fct_ts"/>
+        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
+        <field type="java.lang.Double" id="fct_avg"/>
+        <field type="java.lang.Double" id="fct_max"/>
+        <field type="java.lang.Double" id="fct_min"/>
+      </fieldList>
+    </jdbcTable>
+    <jdbcTable tableName="dim_arista_cpu" datasourceId="zenoss_reporting" id="dim_arista_cpu">
+      <fieldList>
+        <field type="java.lang.Integer" id="arista_cpu_key"/>
+        <field type="java.sql.Timestamp" id="arista_cpu_deleted_at"/>
+        <field type="java.lang.Boolean" id="arista_cpu_deleted" dataSetExpression="if(arista_cpu_deleted_at,null,0,1)"/>
+        <field type="java.lang.String" id="arista_cpu_name"/>
+        <field type="java.lang.Integer" id="device_key"/>
+        <field type="java.lang.String" id="snmpindex"/>
+        <field type="java.lang.Boolean" id="monitor"/>
+        <field type="java.lang.String" id="productionState"/>
+        <field type="java.lang.String" id="preMWProductionState"/>
+        <field type="java.lang.Integer" id="cpu_device_key"/>
+      </fieldList>
+    </jdbcTable>
+    <jdbcTable tableName="daily_hrprocessorload__pct" datasourceId="zenoss_reporting" id="daily_hrprocessorload__pct">
+      <fieldList>
+        <field type="java.lang.Integer" id="device_key"/>
+        <field type="java.lang.Integer" id="component_key"/>
+        <field type="java.util.Date" id="date_key"/>
+        <field type="java.sql.Timestamp" id="fct_ts"/>
+        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
+        <field type="java.lang.Double" id="fct_avg"/>
+        <field type="java.lang.Double" id="fct_max"/>
+        <field type="java.lang.Double" id="fct_min"/>
+      </fieldList>
+    </jdbcTable>
+    <jdbcTable tableName="hourly_hrprocessorload__pct" datasourceId="zenoss_reporting" id="hourly_hrprocessorload__pct">
+      <fieldList>
+        <field type="java.lang.Integer" id="device_key"/>
+        <field type="java.lang.Integer" id="component_key"/>
+        <field type="java.util.Date" id="date_key"/>
+        <field type="java.sql.Timestamp" id="fct_ts"/>
+        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
+        <field type="java.lang.Double" id="fct_avg"/>
+        <field type="java.lang.Double" id="fct_max"/>
+        <field type="java.lang.Double" id="fct_min"/>
+      </fieldList>
+    </jdbcTable>
+    <jdbcTable tableName="dim_arista_memory" datasourceId="zenoss_reporting" id="dim_arista_memory">
+      <fieldList>
+        <field type="java.lang.Integer" id="arista_memory_key"/>
+        <field type="java.sql.Timestamp" id="arista_memory_deleted_at"/>
+        <field type="java.lang.Boolean" id="arista_memory_deleted" dataSetExpression="if(arista_memory_deleted_at,null,0,1)"/>
+        <field type="java.lang.String" id="arista_memory_name"/>
+        <field type="java.lang.Integer" id="device_key"/>
+        <field type="java.lang.String" id="snmpindex"/>
+        <field type="java.lang.Boolean" id="monitor"/>
+        <field type="java.lang.String" id="productionState"/>
+        <field type="java.lang.String" id="preMWProductionState"/>
+        <field type="java.lang.String" id="arista_storage_type"/>
+        <field type="java.lang.String" id="arista_storage_alloc_units"/>
+        <field type="java.lang.String" id="arista_storage_size"/>
+        <field type="java.lang.Integer" id="memory_device_key"/>
+      </fieldList>
+    </jdbcTable>
+    <jdbcTable tableName="daily_hrstorageallocationunits__bytes" datasourceId="zenoss_reporting" id="daily_hrstorageallocationunits__bytes">
+      <fieldList>
+        <field type="java.lang.Integer" id="device_key"/>
+        <field type="java.lang.Integer" id="component_key"/>
+        <field type="java.util.Date" id="date_key"/>
+        <field type="java.sql.Timestamp" id="fct_ts"/>
+        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
+        <field type="java.lang.Double" id="fct_avg"/>
+        <field type="java.lang.Double" id="fct_max"/>
+        <field type="java.lang.Double" id="fct_min"/>
+      </fieldList>
+    </jdbcTable>
+    <jdbcTable tableName="hourly_hrstorageallocationunits__bytes" datasourceId="zenoss_reporting" id="hourly_hrstorageallocationunits__bytes">
+      <fieldList>
+        <field type="java.lang.Integer" id="device_key"/>
+        <field type="java.lang.Integer" id="component_key"/>
+        <field type="java.util.Date" id="date_key"/>
+        <field type="java.sql.Timestamp" id="fct_ts"/>
+        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
+        <field type="java.lang.Double" id="fct_avg"/>
+        <field type="java.lang.Double" id="fct_max"/>
+        <field type="java.lang.Double" id="fct_min"/>
+      </fieldList>
+    </jdbcTable>
+    <jdbcTable tableName="daily_hrstoragesize__bytes" datasourceId="zenoss_reporting" id="daily_hrstoragesize__bytes">
+      <fieldList>
+        <field type="java.lang.Integer" id="device_key"/>
+        <field type="java.lang.Integer" id="component_key"/>
+        <field type="java.util.Date" id="date_key"/>
+        <field type="java.sql.Timestamp" id="fct_ts"/>
+        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
+        <field type="java.lang.Double" id="fct_avg"/>
+        <field type="java.lang.Double" id="fct_max"/>
+        <field type="java.lang.Double" id="fct_min"/>
+      </fieldList>
+    </jdbcTable>
+    <jdbcTable tableName="hourly_hrstoragesize__bytes" datasourceId="zenoss_reporting" id="hourly_hrstoragesize__bytes">
+      <fieldList>
+        <field type="java.lang.Integer" id="device_key"/>
+        <field type="java.lang.Integer" id="component_key"/>
+        <field type="java.util.Date" id="date_key"/>
+        <field type="java.sql.Timestamp" id="fct_ts"/>
+        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
+        <field type="java.lang.Double" id="fct_avg"/>
+        <field type="java.lang.Double" id="fct_max"/>
+        <field type="java.lang.Double" id="fct_min"/>
+      </fieldList>
+    </jdbcTable>
+    <jdbcTable tableName="daily_hrstorageused__bytes" datasourceId="zenoss_reporting" id="daily_hrstorageused__bytes">
+      <fieldList>
+        <field type="java.lang.Integer" id="device_key"/>
+        <field type="java.lang.Integer" id="component_key"/>
+        <field type="java.util.Date" id="date_key"/>
+        <field type="java.sql.Timestamp" id="fct_ts"/>
+        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
+        <field type="java.lang.Double" id="fct_avg"/>
+        <field type="java.lang.Double" id="fct_max"/>
+        <field type="java.lang.Double" id="fct_min"/>
+      </fieldList>
+    </jdbcTable>
+    <jdbcTable tableName="hourly_hrstorageused__bytes" datasourceId="zenoss_reporting" id="hourly_hrstorageused__bytes">
+      <fieldList>
+        <field type="java.lang.Integer" id="device_key"/>
+        <field type="java.lang.Integer" id="component_key"/>
+        <field type="java.util.Date" id="date_key"/>
+        <field type="java.sql.Timestamp" id="fct_ts"/>
+        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
+        <field type="java.lang.Double" id="fct_avg"/>
+        <field type="java.lang.Double" id="fct_max"/>
+        <field type="java.lang.Double" id="fct_min"/>
+      </fieldList>
+    </jdbcTable>
+    <jdbcTable tableName="dim_arista_temperature" datasourceId="zenoss_reporting" id="dim_arista_temperature">
+      <fieldList>
+        <field type="java.lang.Integer" id="arista_temperature_key"/>
+        <field type="java.sql.Timestamp" id="arista_temperature_deleted_at"/>
+        <field type="java.lang.Boolean" id="arista_temperature_deleted" dataSetExpression="if(arista_temperature_deleted_at,null,0,1)"/>
+        <field type="java.lang.String" id="arista_temperature_name"/>
+        <field type="java.lang.Integer" id="device_key"/>
+        <field type="java.lang.String" id="snmpindex"/>
+        <field type="java.lang.Boolean" id="monitor"/>
+        <field type="java.lang.String" id="productionState"/>
+        <field type="java.lang.String" id="preMWProductionState"/>
+        <field type="java.lang.Integer" id="sensor_device_key"/>
+      </fieldList>
+    </jdbcTable>
+    <jdbcTable tableName="daily_entphysensorvalue__degrees" datasourceId="zenoss_reporting" id="daily_entphysensorvalue__degrees">
+      <fieldList>
+        <field type="java.lang.Integer" id="device_key"/>
+        <field type="java.lang.Integer" id="component_key"/>
+        <field type="java.util.Date" id="date_key"/>
+        <field type="java.sql.Timestamp" id="fct_ts"/>
+        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
+        <field type="java.lang.Double" id="fct_avg"/>
+        <field type="java.lang.Double" id="fct_max"/>
+        <field type="java.lang.Double" id="fct_min"/>
+      </fieldList>
+    </jdbcTable>
+    <jdbcTable tableName="hourly_entphysensorvalue__degrees" datasourceId="zenoss_reporting" id="hourly_entphysensorvalue__degrees">
+      <fieldList>
+        <field type="java.lang.Integer" id="device_key"/>
+        <field type="java.lang.Integer" id="component_key"/>
+        <field type="java.util.Date" id="date_key"/>
+        <field type="java.sql.Timestamp" id="fct_ts"/>
+        <field type="java.sql.Timestamp" id="fct_ts_gmt"/>
+        <field type="java.lang.Double" id="fct_avg"/>
+        <field type="java.lang.Double" id="fct_max"/>
+        <field type="java.lang.Double" id="fct_min"/>
+      </fieldList>
+    </jdbcTable>
+    <jdbcTable tableName="dim_device" datasourceId="zenoss_reporting" id="JoinTree_1">
+      <fieldList>
+        <field type="java.lang.Integer" id="dim_date.date_key"/>
+        <field type="java.util.Date" id="dim_date.date_date"/>
+        <field type="java.lang.Integer" id="dim_device.device_key"/>
+        <field type="java.sql.Timestamp" id="dim_device.device_deleted_at"/>
+        <field type="device_deleted" id="dim_device.device_deleted" dataSetExpression="if(dim_device.device_deleted_at,null,0,1)"/>
+        <field type="java.lang.String" id="dim_device.device_name"/>
+        <field type="java.lang.String" id="dim_device.device_manage_ip"/>
+        <field type="java.lang.String" id="dim_device.device_comments"/>
+        <field type="java.lang.String" id="dim_device.device_uid"/>
+        <field type="java.lang.Double" id="dim_device.device_production_state"/>
+        <field type="java.lang.String" id="dim_device.device_production_state_name"/>
+        <field type="java.lang.String" id="dim_device.device_class"/>
+        <field type="java.lang.String" id="dim_device.device_collector"/>
+        <field type="java.lang.String" id="dim_device.device_hw_manufacturer"/>
+        <field type="java.lang.String" id="dim_device.device_hw_product"/>
+        <field type="java.lang.String" id="dim_device.device_hw_serial_number"/>
+        <field type="java.lang.String" id="dim_device.device_hw_asset_tag"/>
+        <field type="java.lang.Double" id="dim_device.device_total_swap"/>
+        <field type="java.lang.Double" id="dim_device.device_total_memory"/>
+        <field type="java.lang.String" id="dim_device.device_os_manufacturer"/>
+        <field type="java.lang.String" id="dim_device.device_os_product"/>
+        <field type="java.lang.String" id="dim_device.device_os_uname"/>
+        <field type="java.lang.Double" id="dim_device.device_os_uptime"/>
+        <field type="java.lang.String" id="dim_device.device_availability"/>
+        <field type="java.util.Date" id="dim_device.device_first_seen"/>
+        <field type="java.util.Date" id="dim_device.device_last_change"/>
+        <field type="java.util.Date" id="dim_device.device_last_model"/>
+        <field type="java.lang.String" id="dim_device.device_rack_slot"/>
+        <field type="java.lang.String" id="dim_device.device_sys_object_id"/>
+        <field type="java.lang.String" id="dim_device.device_sys_descr"/>
+        <field type="java.lang.String" id="dim_device.device_sys_name"/>
+        <field type="java.lang.String" id="dim_device.device_sys_location"/>
+        <field type="java.lang.Boolean" id="dim_device.device_is_monitored"/>
+        <field type="java.lang.String" id="dim_device.arista_switch_serial"/>
+        <field type="java.lang.String" id="dim_device.arista_switch_memory"/>
+        <field type="java.lang.String" id="dim_device.arista_switch_version"/>
+        <field type="java.lang.String" id="dim_device.arista_switch_mac"/>
+        <field type="java.lang.String" id="dim_device.arista_switch_model"/>
+        <field type="java.lang.Integer" id="daily_snmpinbadcommunitynames__count.device_key"/>
+        <field type="java.lang.Integer" id="daily_snmpinbadcommunitynames__count.component_key"/>
+        <field type="java.util.Date" id="daily_snmpinbadcommunitynames__count.date_key"/>
+        <field type="java.sql.Timestamp" id="daily_snmpinbadcommunitynames__count.fct_ts"/>
+        <field type="java.sql.Timestamp" id="daily_snmpinbadcommunitynames__count.fct_ts_gmt"/>
+        <field type="java.lang.Double" id="daily_snmpinbadcommunitynames__count.fct_avg"/>
+        <field type="java.lang.Double" id="daily_snmpinbadcommunitynames__count.fct_max"/>
+        <field type="java.lang.Double" id="daily_snmpinbadcommunitynames__count.fct_min"/>
+        <field type="java.lang.Integer" id="hourly_snmpinbadcommunitynames__count.device_key"/>
+        <field type="java.lang.Integer" id="hourly_snmpinbadcommunitynames__count.component_key"/>
+        <field type="java.util.Date" id="hourly_snmpinbadcommunitynames__count.date_key"/>
+        <field type="java.sql.Timestamp" id="hourly_snmpinbadcommunitynames__count.fct_ts"/>
+        <field type="java.sql.Timestamp" id="hourly_snmpinbadcommunitynames__count.fct_ts_gmt"/>
+        <field type="java.lang.Double" id="hourly_snmpinbadcommunitynames__count.fct_avg"/>
+        <field type="java.lang.Double" id="hourly_snmpinbadcommunitynames__count.fct_max"/>
+        <field type="java.lang.Double" id="hourly_snmpinbadcommunitynames__count.fct_min"/>
+        <field type="java.lang.Integer" id="daily_snmpinbadversions__count.device_key"/>
+        <field type="java.lang.Integer" id="daily_snmpinbadversions__count.component_key"/>
+        <field type="java.util.Date" id="daily_snmpinbadversions__count.date_key"/>
+        <field type="java.sql.Timestamp" id="daily_snmpinbadversions__count.fct_ts"/>
+        <field type="java.sql.Timestamp" id="daily_snmpinbadversions__count.fct_ts_gmt"/>
+        <field type="java.lang.Double" id="daily_snmpinbadversions__count.fct_avg"/>
+        <field type="java.lang.Double" id="daily_snmpinbadversions__count.fct_max"/>
+        <field type="java.lang.Double" id="daily_snmpinbadversions__count.fct_min"/>
+        <field type="java.lang.Integer" id="hourly_snmpinbadversions__count.device_key"/>
+        <field type="java.lang.Integer" id="hourly_snmpinbadversions__count.component_key"/>
+        <field type="java.util.Date" id="hourly_snmpinbadversions__count.date_key"/>
+        <field type="java.sql.Timestamp" id="hourly_snmpinbadversions__count.fct_ts"/>
+        <field type="java.sql.Timestamp" id="hourly_snmpinbadversions__count.fct_ts_gmt"/>
+        <field type="java.lang.Double" id="hourly_snmpinbadversions__count.fct_avg"/>
+        <field type="java.lang.Double" id="hourly_snmpinbadversions__count.fct_max"/>
+        <field type="java.lang.Double" id="hourly_snmpinbadversions__count.fct_min"/>
+        <field type="java.lang.Integer" id="daily_snmpinpkts__count.device_key"/>
+        <field type="java.lang.Integer" id="daily_snmpinpkts__count.component_key"/>
+        <field type="java.util.Date" id="daily_snmpinpkts__count.date_key"/>
+        <field type="java.sql.Timestamp" id="daily_snmpinpkts__count.fct_ts"/>
+        <field type="java.sql.Timestamp" id="daily_snmpinpkts__count.fct_ts_gmt"/>
+        <field type="java.lang.Double" id="daily_snmpinpkts__count.fct_avg"/>
+        <field type="java.lang.Double" id="daily_snmpinpkts__count.fct_max"/>
+        <field type="java.lang.Double" id="daily_snmpinpkts__count.fct_min"/>
+        <field type="java.lang.Integer" id="hourly_snmpinpkts__count.device_key"/>
+        <field type="java.lang.Integer" id="hourly_snmpinpkts__count.component_key"/>
+        <field type="java.util.Date" id="hourly_snmpinpkts__count.date_key"/>
+        <field type="java.sql.Timestamp" id="hourly_snmpinpkts__count.fct_ts"/>
+        <field type="java.sql.Timestamp" id="hourly_snmpinpkts__count.fct_ts_gmt"/>
+        <field type="java.lang.Double" id="hourly_snmpinpkts__count.fct_avg"/>
+        <field type="java.lang.Double" id="hourly_snmpinpkts__count.fct_max"/>
+        <field type="java.lang.Double" id="hourly_snmpinpkts__count.fct_min"/>
+        <field type="java.lang.Integer" id="daily_snmpintotalreqvars__count.device_key"/>
+        <field type="java.lang.Integer" id="daily_snmpintotalreqvars__count.component_key"/>
+        <field type="java.util.Date" id="daily_snmpintotalreqvars__count.date_key"/>
+        <field type="java.sql.Timestamp" id="daily_snmpintotalreqvars__count.fct_ts"/>
+        <field type="java.sql.Timestamp" id="daily_snmpintotalreqvars__count.fct_ts_gmt"/>
+        <field type="java.lang.Double" id="daily_snmpintotalreqvars__count.fct_avg"/>
+        <field type="java.lang.Double" id="daily_snmpintotalreqvars__count.fct_max"/>
+        <field type="java.lang.Double" id="daily_snmpintotalreqvars__count.fct_min"/>
+        <field type="java.lang.Integer" id="hourly_snmpintotalreqvars__count.device_key"/>
+        <field type="java.lang.Integer" id="hourly_snmpintotalreqvars__count.component_key"/>
+        <field type="java.util.Date" id="hourly_snmpintotalreqvars__count.date_key"/>
+        <field type="java.sql.Timestamp" id="hourly_snmpintotalreqvars__count.fct_ts"/>
+        <field type="java.sql.Timestamp" id="hourly_snmpintotalreqvars__count.fct_ts_gmt"/>
+        <field type="java.lang.Double" id="hourly_snmpintotalreqvars__count.fct_avg"/>
+        <field type="java.lang.Double" id="hourly_snmpintotalreqvars__count.fct_max"/>
+        <field type="java.lang.Double" id="hourly_snmpintotalreqvars__count.fct_min"/>
+        <field type="java.lang.Integer" id="daily_snmpoutpkts__count.device_key"/>
+        <field type="java.lang.Integer" id="daily_snmpoutpkts__count.component_key"/>
+        <field type="java.util.Date" id="daily_snmpoutpkts__count.date_key"/>
+        <field type="java.sql.Timestamp" id="daily_snmpoutpkts__count.fct_ts"/>
+        <field type="java.sql.Timestamp" id="daily_snmpoutpkts__count.fct_ts_gmt"/>
+        <field type="java.lang.Double" id="daily_snmpoutpkts__count.fct_avg"/>
+        <field type="java.lang.Double" id="daily_snmpoutpkts__count.fct_max"/>
+        <field type="java.lang.Double" id="daily_snmpoutpkts__count.fct_min"/>
+        <field type="java.lang.Integer" id="hourly_snmpoutpkts__count.device_key"/>
+        <field type="java.lang.Integer" id="hourly_snmpoutpkts__count.component_key"/>
+        <field type="java.util.Date" id="hourly_snmpoutpkts__count.date_key"/>
+        <field type="java.sql.Timestamp" id="hourly_snmpoutpkts__count.fct_ts"/>
+        <field type="java.sql.Timestamp" id="hourly_snmpoutpkts__count.fct_ts_gmt"/>
+        <field type="java.lang.Double" id="hourly_snmpoutpkts__count.fct_avg"/>
+        <field type="java.lang.Double" id="hourly_snmpoutpkts__count.fct_max"/>
+        <field type="java.lang.Double" id="hourly_snmpoutpkts__count.fct_min"/>
+        <field type="java.lang.Integer" id="dim_arista_cpu.arista_cpu_key"/>
+        <field type="java.sql.Timestamp" id="dim_arista_cpu.arista_cpu_deleted_at"/>
+        <field type="arista_cpu_deleted" id="dim_arista_cpu.arista_cpu_deleted" dataSetExpression="if(dim_arista_cpu.arista_cpu_deleted_at,null,0,1)"/>
+        <field type="java.lang.String" id="dim_arista_cpu.arista_cpu_name"/>
+        <field type="java.lang.Integer" id="dim_arista_cpu.device_key"/>
+        <field type="java.lang.String" id="dim_arista_cpu.snmpindex"/>
+        <field type="java.lang.Boolean" id="dim_arista_cpu.monitor"/>
+        <field type="java.lang.String" id="dim_arista_cpu.productionState"/>
+        <field type="java.lang.String" id="dim_arista_cpu.preMWProductionState"/>
+        <field type="java.lang.Integer" id="dim_arista_cpu.cpu_device_key"/>
+        <field type="java.lang.Integer" id="daily_hrprocessorload__pct.device_key"/>
+        <field type="java.lang.Integer" id="daily_hrprocessorload__pct.component_key"/>
+        <field type="java.util.Date" id="daily_hrprocessorload__pct.date_key"/>
+        <field type="java.sql.Timestamp" id="daily_hrprocessorload__pct.fct_ts"/>
+        <field type="java.sql.Timestamp" id="daily_hrprocessorload__pct.fct_ts_gmt"/>
+        <field type="java.lang.Double" id="daily_hrprocessorload__pct.fct_avg"/>
+        <field type="java.lang.Double" id="daily_hrprocessorload__pct.fct_max"/>
+        <field type="java.lang.Double" id="daily_hrprocessorload__pct.fct_min"/>
+        <field type="java.lang.Integer" id="hourly_hrprocessorload__pct.device_key"/>
+        <field type="java.lang.Integer" id="hourly_hrprocessorload__pct.component_key"/>
+        <field type="java.util.Date" id="hourly_hrprocessorload__pct.date_key"/>
+        <field type="java.sql.Timestamp" id="hourly_hrprocessorload__pct.fct_ts"/>
+        <field type="java.sql.Timestamp" id="hourly_hrprocessorload__pct.fct_ts_gmt"/>
+        <field type="java.lang.Double" id="hourly_hrprocessorload__pct.fct_avg"/>
+        <field type="java.lang.Double" id="hourly_hrprocessorload__pct.fct_max"/>
+        <field type="java.lang.Double" id="hourly_hrprocessorload__pct.fct_min"/>
+        <field type="java.lang.Integer" id="dim_arista_memory.arista_memory_key"/>
+        <field type="java.sql.Timestamp" id="dim_arista_memory.arista_memory_deleted_at"/>
+        <field type="arista_memory_deleted" id="dim_arista_memory.arista_memory_deleted" dataSetExpression="if(dim_arista_memory.arista_memory_deleted_at,null,0,1)"/>
+        <field type="java.lang.String" id="dim_arista_memory.arista_memory_name"/>
+        <field type="java.lang.Integer" id="dim_arista_memory.device_key"/>
+        <field type="java.lang.String" id="dim_arista_memory.snmpindex"/>
+        <field type="java.lang.Boolean" id="dim_arista_memory.monitor"/>
+        <field type="java.lang.String" id="dim_arista_memory.productionState"/>
+        <field type="java.lang.String" id="dim_arista_memory.preMWProductionState"/>
+        <field type="java.lang.String" id="dim_arista_memory.arista_storage_type"/>
+        <field type="java.lang.String" id="dim_arista_memory.arista_storage_alloc_units"/>
+        <field type="java.lang.String" id="dim_arista_memory.arista_storage_size"/>
+        <field type="java.lang.Integer" id="dim_arista_memory.memory_device_key"/>
+        <field type="java.lang.Integer" id="daily_hrstorageallocationunits__bytes.device_key"/>
+        <field type="java.lang.Integer" id="daily_hrstorageallocationunits__bytes.component_key"/>
+        <field type="java.util.Date" id="daily_hrstorageallocationunits__bytes.date_key"/>
+        <field type="java.sql.Timestamp" id="daily_hrstorageallocationunits__bytes.fct_ts"/>
+        <field type="java.sql.Timestamp" id="daily_hrstorageallocationunits__bytes.fct_ts_gmt"/>
+        <field type="java.lang.Double" id="daily_hrstorageallocationunits__bytes.fct_avg"/>
+        <field type="java.lang.Double" id="daily_hrstorageallocationunits__bytes.fct_max"/>
+        <field type="java.lang.Double" id="daily_hrstorageallocationunits__bytes.fct_min"/>
+        <field type="java.lang.Integer" id="hourly_hrstorageallocationunits__bytes.device_key"/>
+        <field type="java.lang.Integer" id="hourly_hrstorageallocationunits__bytes.component_key"/>
+        <field type="java.util.Date" id="hourly_hrstorageallocationunits__bytes.date_key"/>
+        <field type="java.sql.Timestamp" id="hourly_hrstorageallocationunits__bytes.fct_ts"/>
+        <field type="java.sql.Timestamp" id="hourly_hrstorageallocationunits__bytes.fct_ts_gmt"/>
+        <field type="java.lang.Double" id="hourly_hrstorageallocationunits__bytes.fct_avg"/>
+        <field type="java.lang.Double" id="hourly_hrstorageallocationunits__bytes.fct_max"/>
+        <field type="java.lang.Double" id="hourly_hrstorageallocationunits__bytes.fct_min"/>
+        <field type="java.lang.Integer" id="daily_hrstoragesize__bytes.device_key"/>
+        <field type="java.lang.Integer" id="daily_hrstoragesize__bytes.component_key"/>
+        <field type="java.util.Date" id="daily_hrstoragesize__bytes.date_key"/>
+        <field type="java.sql.Timestamp" id="daily_hrstoragesize__bytes.fct_ts"/>
+        <field type="java.sql.Timestamp" id="daily_hrstoragesize__bytes.fct_ts_gmt"/>
+        <field type="java.lang.Double" id="daily_hrstoragesize__bytes.fct_avg"/>
+        <field type="java.lang.Double" id="daily_hrstoragesize__bytes.fct_max"/>
+        <field type="java.lang.Double" id="daily_hrstoragesize__bytes.fct_min"/>
+        <field type="java.lang.Integer" id="hourly_hrstoragesize__bytes.device_key"/>
+        <field type="java.lang.Integer" id="hourly_hrstoragesize__bytes.component_key"/>
+        <field type="java.util.Date" id="hourly_hrstoragesize__bytes.date_key"/>
+        <field type="java.sql.Timestamp" id="hourly_hrstoragesize__bytes.fct_ts"/>
+        <field type="java.sql.Timestamp" id="hourly_hrstoragesize__bytes.fct_ts_gmt"/>
+        <field type="java.lang.Double" id="hourly_hrstoragesize__bytes.fct_avg"/>
+        <field type="java.lang.Double" id="hourly_hrstoragesize__bytes.fct_max"/>
+        <field type="java.lang.Double" id="hourly_hrstoragesize__bytes.fct_min"/>
+        <field type="java.lang.Integer" id="daily_hrstorageused__bytes.device_key"/>
+        <field type="java.lang.Integer" id="daily_hrstorageused__bytes.component_key"/>
+        <field type="java.util.Date" id="daily_hrstorageused__bytes.date_key"/>
+        <field type="java.sql.Timestamp" id="daily_hrstorageused__bytes.fct_ts"/>
+        <field type="java.sql.Timestamp" id="daily_hrstorageused__bytes.fct_ts_gmt"/>
+        <field type="java.lang.Double" id="daily_hrstorageused__bytes.fct_avg"/>
+        <field type="java.lang.Double" id="daily_hrstorageused__bytes.fct_max"/>
+        <field type="java.lang.Double" id="daily_hrstorageused__bytes.fct_min"/>
+        <field type="java.lang.Integer" id="hourly_hrstorageused__bytes.device_key"/>
+        <field type="java.lang.Integer" id="hourly_hrstorageused__bytes.component_key"/>
+        <field type="java.util.Date" id="hourly_hrstorageused__bytes.date_key"/>
+        <field type="java.sql.Timestamp" id="hourly_hrstorageused__bytes.fct_ts"/>
+        <field type="java.sql.Timestamp" id="hourly_hrstorageused__bytes.fct_ts_gmt"/>
+        <field type="java.lang.Double" id="hourly_hrstorageused__bytes.fct_avg"/>
+        <field type="java.lang.Double" id="hourly_hrstorageused__bytes.fct_max"/>
+        <field type="java.lang.Double" id="hourly_hrstorageused__bytes.fct_min"/>
+        <field type="java.lang.Integer" id="dim_arista_temperature.arista_temperature_key"/>
+        <field type="java.sql.Timestamp" id="dim_arista_temperature.arista_temperature_deleted_at"/>
+        <field type="arista_temperature_deleted" id="dim_arista_temperature.arista_temperature_deleted" dataSetExpression="if(dim_arista_temperature.arista_temperature_deleted_at,null,0,1)"/>
+        <field type="java.lang.String" id="dim_arista_temperature.arista_temperature_name"/>
+        <field type="java.lang.Integer" id="dim_arista_temperature.device_key"/>
+        <field type="java.lang.String" id="dim_arista_temperature.snmpindex"/>
+        <field type="java.lang.Boolean" id="dim_arista_temperature.monitor"/>
+        <field type="java.lang.String" id="dim_arista_temperature.productionState"/>
+        <field type="java.lang.String" id="dim_arista_temperature.preMWProductionState"/>
+        <field type="java.lang.Integer" id="dim_arista_temperature.sensor_device_key"/>
+        <field type="java.lang.Integer" id="daily_entphysensorvalue__degrees.device_key"/>
+        <field type="java.lang.Integer" id="daily_entphysensorvalue__degrees.component_key"/>
+        <field type="java.util.Date" id="daily_entphysensorvalue__degrees.date_key"/>
+        <field type="java.sql.Timestamp" id="daily_entphysensorvalue__degrees.fct_ts"/>
+        <field type="java.sql.Timestamp" id="daily_entphysensorvalue__degrees.fct_ts_gmt"/>
+        <field type="java.lang.Double" id="daily_entphysensorvalue__degrees.fct_avg"/>
+        <field type="java.lang.Double" id="daily_entphysensorvalue__degrees.fct_max"/>
+        <field type="java.lang.Double" id="daily_entphysensorvalue__degrees.fct_min"/>
+        <field type="java.lang.Integer" id="hourly_entphysensorvalue__degrees.device_key"/>
+        <field type="java.lang.Integer" id="hourly_entphysensorvalue__degrees.component_key"/>
+        <field type="java.util.Date" id="hourly_entphysensorvalue__degrees.date_key"/>
+        <field type="java.sql.Timestamp" id="hourly_entphysensorvalue__degrees.fct_ts"/>
+        <field type="java.sql.Timestamp" id="hourly_entphysensorvalue__degrees.fct_ts_gmt"/>
+        <field type="java.lang.Double" id="hourly_entphysensorvalue__degrees.fct_avg"/>
+        <field type="java.lang.Double" id="hourly_entphysensorvalue__degrees.fct_max"/>
+        <field type="java.lang.Double" id="hourly_entphysensorvalue__degrees.fct_min"/>
+      </fieldList>
+      <filterString>contains(dim_device.device_class, 'Arista')</filterString>
+      <joinInfo alias="dim_device" referenceId="dim_device"/>
+      <joinedDataSetList>
+        <joinedDataSetRef>
+          <joinString>left outer join daily_snmpinbadcommunitynames__count daily_snmpinbadcommunitynames__count on (dim_device.device_key == daily_snmpinbadcommunitynames__count.device_key)</joinString>
+        </joinedDataSetRef>
+        <joinedDataSetRef>
+          <joinString>left outer join hourly_snmpinbadcommunitynames__count hourly_snmpinbadcommunitynames__count on (dim_device.device_key == hourly_snmpinbadcommunitynames__count.device_key)</joinString>
+        </joinedDataSetRef>
+        <joinedDataSetRef>
+          <joinString>left outer join daily_snmpinbadversions__count daily_snmpinbadversions__count on (dim_device.device_key == daily_snmpinbadversions__count.device_key)</joinString>
+        </joinedDataSetRef>
+        <joinedDataSetRef>
+          <joinString>left outer join hourly_snmpinbadversions__count hourly_snmpinbadversions__count on (dim_device.device_key == hourly_snmpinbadversions__count.device_key)</joinString>
+        </joinedDataSetRef>
+        <joinedDataSetRef>
+          <joinString>left outer join daily_snmpinpkts__count daily_snmpinpkts__count on (dim_device.device_key == daily_snmpinpkts__count.device_key)</joinString>
+        </joinedDataSetRef>
+        <joinedDataSetRef>
+          <joinString>left outer join hourly_snmpinpkts__count hourly_snmpinpkts__count on (dim_device.device_key == hourly_snmpinpkts__count.device_key)</joinString>
+        </joinedDataSetRef>
+        <joinedDataSetRef>
+          <joinString>left outer join daily_snmpintotalreqvars__count daily_snmpintotalreqvars__count on (dim_device.device_key == daily_snmpintotalreqvars__count.device_key)</joinString>
+        </joinedDataSetRef>
+        <joinedDataSetRef>
+          <joinString>left outer join hourly_snmpintotalreqvars__count hourly_snmpintotalreqvars__count on (dim_device.device_key == hourly_snmpintotalreqvars__count.device_key)</joinString>
+        </joinedDataSetRef>
+        <joinedDataSetRef>
+          <joinString>left outer join daily_snmpoutpkts__count daily_snmpoutpkts__count on (dim_device.device_key == daily_snmpoutpkts__count.device_key)</joinString>
+        </joinedDataSetRef>
+        <joinedDataSetRef>
+          <joinString>left outer join hourly_snmpoutpkts__count hourly_snmpoutpkts__count on (dim_device.device_key == hourly_snmpoutpkts__count.device_key)</joinString>
+        </joinedDataSetRef>
+        <joinedDataSetRef>
+          <joinString>left outer join dim_arista_cpu dim_arista_cpu on (dim_arista_cpu.cpu_device_key == dim_device.device_key)</joinString>
+        </joinedDataSetRef>
+        <joinedDataSetRef>
+          <joinString>left outer join daily_hrprocessorload__pct daily_hrprocessorload__pct on (dim_arista_cpu.arista_cpu_key == daily_hrprocessorload__pct.component_key)</joinString>
+        </joinedDataSetRef>
+        <joinedDataSetRef>
+          <joinString>left outer join hourly_hrprocessorload__pct hourly_hrprocessorload__pct on (dim_arista_cpu.arista_cpu_key == hourly_hrprocessorload__pct.component_key)</joinString>
+        </joinedDataSetRef>
+        <joinedDataSetRef>
+          <joinString>left outer join dim_arista_memory dim_arista_memory on (dim_arista_memory.memory_device_key == dim_device.device_key)</joinString>
+        </joinedDataSetRef>
+        <joinedDataSetRef>
+          <joinString>left outer join daily_hrstorageallocationunits__bytes daily_hrstorageallocationunits__bytes on (dim_arista_memory.arista_memory_key == daily_hrstorageallocationunits__bytes.component_key)</joinString>
+        </joinedDataSetRef>
+        <joinedDataSetRef>
+          <joinString>left outer join hourly_hrstorageallocationunits__bytes hourly_hrstorageallocationunits__bytes on (dim_arista_memory.arista_memory_key == hourly_hrstorageallocationunits__bytes.component_key)</joinString>
+        </joinedDataSetRef>
+        <joinedDataSetRef>
+          <joinString>left outer join daily_hrstoragesize__bytes daily_hrstoragesize__bytes on (dim_arista_memory.arista_memory_key == daily_hrstoragesize__bytes.component_key)</joinString>
+        </joinedDataSetRef>
+        <joinedDataSetRef>
+          <joinString>left outer join hourly_hrstoragesize__bytes hourly_hrstoragesize__bytes on (dim_arista_memory.arista_memory_key == hourly_hrstoragesize__bytes.component_key)</joinString>
+        </joinedDataSetRef>
+        <joinedDataSetRef>
+          <joinString>left outer join daily_hrstorageused__bytes daily_hrstorageused__bytes on (dim_arista_memory.arista_memory_key == daily_hrstorageused__bytes.component_key)</joinString>
+        </joinedDataSetRef>
+        <joinedDataSetRef>
+          <joinString>left outer join hourly_hrstorageused__bytes hourly_hrstorageused__bytes on (dim_arista_memory.arista_memory_key == hourly_hrstorageused__bytes.component_key)</joinString>
+        </joinedDataSetRef>
+        <joinedDataSetRef>
+          <joinString>left outer join dim_arista_temperature dim_arista_temperature on (dim_arista_temperature.sensor_device_key == dim_device.device_key)</joinString>
+        </joinedDataSetRef>
+        <joinedDataSetRef>
+          <joinString>left outer join daily_entphysensorvalue__degrees daily_entphysensorvalue__degrees on (dim_arista_temperature.arista_temperature_key == daily_entphysensorvalue__degrees.component_key)</joinString>
+        </joinedDataSetRef>
+        <joinedDataSetRef>
+          <joinString>left outer join hourly_entphysensorvalue__degrees hourly_entphysensorvalue__degrees on (dim_arista_temperature.arista_temperature_key == hourly_entphysensorvalue__degrees.component_key)</joinString>
+        </joinedDataSetRef>
+        <joinedDataSetRef>
+          <joinString>left outer join dim_date dim_date on (hourly_hrprocessorload__pct.date_key == dim_date.date_key and daily_snmpinpkts__count.date_key == dim_date.date_key and hourly_hrstorageused__bytes.date_key == dim_date.date_key and hourly_snmpintotalreqvars__count.date_key == dim_date.date_key and daily_snmpinbadversions__count.date_key == dim_date.date_key and daily_hrprocessorload__pct.date_key == dim_date.date_key and daily_hrstoragesize__bytes.date_key == dim_date.date_key and daily_snmpinbadcommunitynames__count.date_key == dim_date.date_key and daily_snmpintotalreqvars__count.date_key == dim_date.date_key and hourly_snmpinpkts__count.date_key == dim_date.date_key and daily_hrstorageused__bytes.date_key == dim_date.date_key and hourly_hrstoragesize__bytes.date_key == dim_date.date_key and daily_hrstorageallocationunits__bytes.date_key == dim_date.date_key and hourly_snmpoutpkts__count.date_key == dim_date.date_key and hourly_hrstorageallocationunits__bytes.date_key == dim_date.date_key and daily_entphysensorvalue__degrees.date_key == dim_date.date_key and hourly_snmpinbadcommunitynames__count.date_key == dim_date.date_key and hourly_entphysensorvalue__degrees.date_key == dim_date.date_key and hourly_snmpinbadversions__count.date_key == dim_date.date_key and daily_snmpoutpkts__count.date_key == dim_date.date_key)</joinString>
+        </joinedDataSetRef>
+      </joinedDataSetList>
+    </jdbcTable>
+  </resources>
+</schema>

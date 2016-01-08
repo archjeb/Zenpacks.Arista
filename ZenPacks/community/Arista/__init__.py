@@ -1,6 +1,3 @@
-productNames = ( 
-   'AristaDevice',
-   'AristaTemperature',
-   'AristaCPU',
-   'AristaMemory',
-   ) 
+from . import zenpacklib
+
+zenpacklib.load_yaml()

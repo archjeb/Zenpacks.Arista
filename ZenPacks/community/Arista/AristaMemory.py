@@ -37,41 +37,13 @@
 #
 #   AristaMemory Class
 
-
-from Products.ZenModel.DeviceComponent import DeviceComponent
-from Products.ZenModel.ManagedEntity import ManagedEntity
-from Products.ZenModel.ZenossSecurity import ZEN_CHANGE_DEVICE
-from Products.ZenRelations.RelSchema import ToManyCont, ToOne
+from . import schema
 
 
-class AristaMemory(DeviceComponent, ManagedEntity):
-    #Class name must match filename
-    meta_type = portal_type = 'AristaMemory'
-    arista_storage_type = None
-    arista_storage_alloc_units = None
-    arista_storage_size = None
- 
-    _properties = ManagedEntity._properties + (
-        {'id': 'arista_storage_type', 'type': 'string'},
-        {'id': 'arista_storage_alloc_units', 'type': 'string'},
-        {'id': 'arista_storage_size', 'type': 'string'},
-        )
+class AristaMemory(schema.AristaMemory):
+    """
+    Custom model code for AristaMemory class.  We need this to
+    install new Zenoss version on top of community one
+    """
 
-    _relations = ManagedEntity._relations + (
-        ('memory_device', ToOne(ToManyCont, 'ZenPacks.community.Arista.AristaDevice','memory_subsystems',)),
-        )
-
-    factory_type_information = ({
-        'actions': ({
-            'id': 'perfConf',
-            'name': 'Template',
-            'action': 'objTemplates',
-            'permissions': (ZEN_CHANGE_DEVICE,),
-            },),
-        },)
-
-    def device(self):
-        return self.memory_device()
-
-    def getRRDTemplateName(self):
-        return 'AristaMemory'
+    class_dynamicview_group = 'Arista Memorys'

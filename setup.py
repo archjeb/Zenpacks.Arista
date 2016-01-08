@@ -3,7 +3,7 @@
 # or saved.  Do not modify them directly here.
 # NB: PACKAGES is deprecated
 NAME = "ZenPacks.community.Arista"
-VERSION = "0.7.0"
+VERSION = "0.7.z1"
 AUTHOR = "Jeremy Georges"
 LICENSE = "Apache"
 NAMESPACE_PACKAGES = ['ZenPacks', 'ZenPacks.community']
@@ -19,13 +19,6 @@ import os
 from subprocess import Popen, PIPE
 from setuptools import setup, find_packages
 
-# Run "make build" if a GNUmakefile is present.
-if os.path.isfile('GNUmakefile'):
-    print 'GNUmakefile found. Running "make build" ..'
-    p = Popen('make build', stdout=PIPE, stderr=PIPE, shell=True)
-    print p.communicate()[0]
-    if p.returncode != 0:
-        raise Exception('"make build" exited with an error: %s' % p.returncode)
 
 setup(
     # This ZenPack metadata should usually be edited with the Zenoss

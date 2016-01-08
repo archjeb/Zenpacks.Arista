@@ -37,32 +37,13 @@
 #
 #   Arista Temperature Sensor Class
 
-
-from Products.ZenModel.DeviceComponent import DeviceComponent
-from Products.ZenModel.ManagedEntity import ManagedEntity
-from Products.ZenModel.ZenossSecurity import ZEN_CHANGE_DEVICE
-from Products.ZenRelations.RelSchema import ToManyCont, ToOne
+from . import schema
 
 
-class AristaTemperature(DeviceComponent, ManagedEntity):
-    #Class name must match filename
-    meta_type = portal_type = 'AristaTemperatureSensor'
+class AristaTemperature(schema.AristaTemperature):
+    """
+    Custom model code for AristaTemperature class. We need this to
+    install new Zenoss version on top of community one
+    """
 
-    _relations = ManagedEntity._relations + (
-        ('sensor_device', ToOne(ToManyCont,'ZenPacks.community.Arista.AristaDevice','temperature_sensors',)),
-        )
-
-    factory_type_information = ({
-        'actions': ({
-            'id': 'perfConf',
-            'name': 'Template',
-            'action': 'objTemplates',
-            'permissions': (ZEN_CHANGE_DEVICE,),
-            },),
-        },)
-
-    def device(self):
-        return self.sensor_device()
-
-    def getRRDTemplateName(self):
-        return 'AristaTemperature'
+    class_dynamicview_group = 'Arista Temperatures'

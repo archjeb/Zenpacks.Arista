@@ -1,0 +1,225 @@
+name: ZenPacks.community.Arista
+device_classes:
+  /Arista:
+    create: True
+    remove: True
+    zProperties:
+      zPythonClass: ZenPacks.community.Arista.AristaDevice
+      zCollectorPlugins: ['community.snmp.AristaDevice', 'community.snmp.AristaCPU', 'community.snmp.AristaMemory', 'community.snmp.AristaTemperature']
+    templates:
+      AristaCPU:
+        description: ''
+        targetPythonClass: Products.ZenModel.Device
+        datasources:
+          hrProcessorLoad:
+            type: SNMP
+            datapoints:
+              hrProcessorLoad:
+                description: Load on each proc and core
+                aliases: {hrProcessorLoad__pct: null}
+            oid: .1.3.6.1.2.1.25.3.3.1.2
+        graphs:
+          Utilization:
+            units: Utilization
+            graphpoints:
+              hrProcessorLoad:
+                dpName: hrProcessorLoad_hrProcessorLoad
+      AristaMemory:
+        description: ''
+        targetPythonClass: Products.ZenModel.Device
+        thresholds:
+          High Mem Usage:
+            dsnames: [hrStorageSize]
+            minval: (here.getRRDValue('hrStorageSize') or 0)*.2
+        datasources:
+          hrStorageAllocationUnits:
+            type: SNMP
+            datapoints:
+              hrStorageAllocationUnits:
+                aliases: {hrStorageAllocationUnits__bytes: null}
+            oid: .1.3.6.1.2.1.25.2.3.1.4
+          hrStorageSize:
+            type: SNMP
+            datapoints:
+              hrStorageSize:
+                aliases: {hrStorageSize__bytes: null}
+            oid: .1.3.6.1.2.1.25.2.3.1.5
+          hrStorageUsed:
+            type: SNMP
+            datapoints:
+              hrStorageUsed:
+                description: Storage Used
+                aliases: {hrStorageUsed__bytes: null}
+            oid: .1.3.6.1.2.1.25.2.3.1.6
+        graphs:
+          Storage Used:
+            units: Blocks
+            graphpoints:
+              hrStorageUsed:
+                dpName: hrStorageUsed_hrStorageUsed
+      AristaTemperature:
+        description: ''
+        targetPythonClass: Products.ZenModel.Device
+        thresholds:
+          High Temperature:
+            dsnames: [entPhySensorValue]
+            eventClass: /Environ
+            maxval: '950'
+        datasources:
+          entPhySensorValue:
+            type: SNMP
+            datapoints:
+              entPhySensorValue:
+                description: Temperature Sensor Value
+                aliases: {entPhySensorValue__degrees: null}
+            oid: .1.3.6.1.2.1.99.1.1.1.4
+        graphs:
+          Temperature:
+            units: degrees c
+            graphpoints:
+              Temperature:
+                dpName: entPhySensorValue_entPhySensorValue
+                format: '%7.2lf'
+                rpn: 10,/
+                includeThresholds: true
+      Device:
+        description: Basic template that only collects sysUpTime.
+        targetPythonClass: Products.ZenModel.Device
+        datasources:
+          snmpInBadCommunityNames:
+            type: SNMP
+            datapoints:
+              snmpInBadCommunityNames:
+                description: Basic template that only collects snmp InBadCommunityNames.
+                aliases: {snmpInBadCommunityNames__count: null}
+            oid: 1.3.6.1.2.1.11.4.0
+          snmpInBadVersions:
+            type: SNMP
+            datapoints:
+              snmpInBadVersions:
+                description: Basic template that only collects snmpInBadVersions.
+                aliases: {snmpInBadVersions__count: null}
+            oid: 1.3.6.1.2.1.11.3.0
+          snmpInPkts:
+            type: SNMP
+            datapoints:
+              snmpInPkts:
+                description: Basic template that only collects snmpInPkts
+                aliases: {snmpInPkts__count: null}
+            oid: 1.3.6.1.2.1.11.1.0
+          snmpInTotalReqVars:
+            type: SNMP
+            datapoints:
+              snmpInTotalReqVars:
+                description: Basic template that only collects snmpInTotalReqVars.
+                aliases: {snmpInTotalReqVars__count: null}
+            oid: 1.3.6.1.2.1.11.13.0
+          snmpOutPkts:
+            type: SNMP
+            datapoints:
+              snmpOutPkts:
+                description: Basic template that only collects snmpOutPkts.
+                aliases: {snmpOutPkts__count: null}
+            oid: 1.3.6.1.2.1.11.2.0
+          sysDescr:
+            type: SNMP
+            datapoints:
+              sysDescr:
+                description: Basic template that only collects system description
+            oid: 1.3.6.1.2.1.1.1.0
+          sysLocation:
+            type: SNMP
+            datapoints:
+              sysLocation:
+                description: Basic template that only collects sysLocation.
+            oid: 1.3.6.1.2.1.1.6.0
+          sysName:
+            type: SNMP
+            datapoints:
+              sysName:
+                description: Basic template that only collects snmp SysName.
+            oid: 1.3.6.1.2.1.1.5.0
+          sysUpTime:
+            type: SNMP
+            datapoints:
+              sysUpTime:
+                description: Basic template that only collects sysUpTime.
+            oid: 1.3.6.1.2.1.1.3.0
+        graphs:
+          snmpInBadCommunityNames:
+            graphpoints:
+              snmpInBadCommunityNames:
+                dpName: snmpInBadCommunityNames_snmpInBadCommunityNames
+          snmpInBadVersions:
+            graphpoints:
+              snmpInBadVersions:
+                dpName: snmpInBadVersions_snmpInBadVersions
+          snmpInPkts:
+            graphpoints:
+              snmpInPkts:
+                dpName: snmpInPkts_snmpInPkts
+          snmpInTotalReqVars:
+            graphpoints:
+              snmpInTotalReqVars:
+                dpName: snmpInTotalReqVars_snmpInTotalReqVars
+          snmpOutPkts:
+            graphpoints:
+              snmpOutPkts:
+                dpName: snmpOutPkts_snmpOutPkts
+classes:
+  DEFAULTS:
+    base: [zenpacklib.Component]
+  AristaDevice:
+    base: [zenpacklib.Device]
+    meta_type: AristaDevice
+    label: Device
+    dynamicview_views: [service_view]
+    dynamicview_relations:
+      impacted_by: [cpu_systems, memory_subsystems, temperature_sensors]
+    properties:
+      arista_switch_serial:
+        label: Arista Switch Serial
+      arista_switch_memory:
+        label: Arista Switch Memory
+      arista_switch_version:
+        label: Arista Switch Version
+      arista_switch_mac:
+        label: Arista Switch MAC
+      arista_switch_model:
+        label: Arista Switch Model
+  AristaCPU:
+    meta_type: AristaCPU
+    label: CPU
+    monitoring_templates: [AristaCPU]
+    dynamicview_views: [service_view]
+    dynamicview_relations:
+      impacts: [cpu_device]
+  AristaTemperature:
+    meta_type: AristaTemperature
+    label: Temperature Sensor
+    monitoring_templates: [AristaTemperature]
+    dynamicview_views: [service_view]
+    dynamicview_relations:
+      impacts: [sensor_device]
+  AristaMemory:
+    meta_type: AristaMemory
+    label: Memory
+    plural_label: Memory
+    monitoring_templates: [AristaMemory]
+    dynamicview_views: [service_view]
+    dynamicview_relations:
+      impacts: [memory_device]
+    properties:
+      arista_storage_type:
+        label: Arista Storage Type
+        content_width: 150
+      arista_storage_alloc_units:
+        label: Arista Storage Allocation Units
+        content_width: 150
+      arista_storage_size:
+        label: Arista Storage Size
+        content_width: 150
+class_relationships:
+  - AristaDevice(cpu_systems) 1:MC AristaCPU(cpu_device)
+  - AristaDevice(temperature_sensors) 1:MC AristaTemperature(sensor_device)
+  - AristaDevice(memory_subsystems) 1:MC AristaMemory(memory_device)
